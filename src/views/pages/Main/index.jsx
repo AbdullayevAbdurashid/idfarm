@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { Row, Col, Container } from "reactstrap";
 import "../../../assets/scss/index.css";
@@ -30,13 +30,26 @@ function Main() {
     lineChartDanger = "#ff4961",
     warningColorShade = "#ffbd1f",
     greyLightColor = "#EDF1F4";
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
   return (
-    <Container>
+    <Container fluid={isMobile ? true : false}>
       <Row>
-        <Col className="example">
-          <div id="map">
-            <SVGMap map={uzbekistan} />
-          </div>
+        <Col md={6} sm={12} className="example">
+          <SVGMap className="map" map={uzbekistan} />
+
           <div className="legend">
             <ul>
               <li>Qoshilish etapida</li>
@@ -45,7 +58,7 @@ function Main() {
             </ul>
           </div>
         </Col>
-        <Col>
+        <Col md={6}>
           <ApexRadiarChart
             title={"O'zbekistondagi chorvalar statistikasi"}
             description={"Oxirgi 30 kun ihcidagi malumot"}
