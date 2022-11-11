@@ -1,0 +1,53 @@
+.svg-map__location:nth-child(5){
+    fill: #28C76F;
+}
+.svg-map__location:nth-child(6){
+    fill: #28C76F;
+}
+.svg-map__location:nth-child(3){
+    fill: #FF9F43;
+}
+.svg-map__location:nth-child(1){
+    fill: #FF9F43;
+}
+.svg-map__location{
+    fill: #79807C;
+    stroke: white;
+}
+.legend{
+position: relative;
+bottom: 30px;
+}
+.legend>ul{
+    list-style: none;
+
+}
+.legend>ul>li{
+    font-size: 1.4rem;
+}
+.map{
+    width: 80%;
+}
+.card2{
+    display: flex !important;
+    justify-content: center !important;
+}
+.legend>ul>li:before {
+    content: "";
+    border: 10px solid red;
+    border-radius: 100%;
+    margin-right: 10px;
+    height: 1rem;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1rem;
+    font-family: FontAwesome;
+  }
+  
+  .legend>ul>li:nth-child(2):before {
+    border-color: #FF9F43;
+  }
+  .legend>ul>li:nth-child(3):before {
+    border-color: #28C76F;
+  }
+  
