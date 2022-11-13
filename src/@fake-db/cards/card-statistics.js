@@ -28,7 +28,7 @@ const data = {
       }
     ],
     analyticsData: {
-      subscribers: 92600
+      subscribers: "60,000"
     }
   },
   revenueGenerated: {
@@ -75,8 +75,8 @@ const data = {
   activeUsers: {
     series: [
       {
-        name: 'Active Users',
-        data: [750, 1000, 900, 1250, 1000, 1200, 1100]
+        name: 'Yem narxi',
+        data: [30000, 40000, 50000, 60000, 70000, 80000, 190000]
       }
     ]
   },

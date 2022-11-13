@@ -212,7 +212,7 @@ const ShareProjectExample = () => {
           <div className="d-flex align-content-center justify-content-between flex-wrap">
             <div className="d-flex align-items-center me-2">
               <Users className="font-medium-2 me-50" />
-              <p className="fw-bolder mb-0">Public to IDFARM - Pixinvent</p>
+              <p className="fw-bolder mb-0">Public to IDFARM - Abdurashid</p>
             </div>
             <a
               className="fw-bolder"

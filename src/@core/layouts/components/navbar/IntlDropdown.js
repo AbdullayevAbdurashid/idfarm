@@ -12,9 +12,7 @@ const IntlDropdown = () => {
   // ** Vars
   const langObj = {
     en: 'English',
-    de: 'German',
-    fr: 'French',
-    pt: 'Portuguese'
+
   }
 
   // ** Function to switch Language

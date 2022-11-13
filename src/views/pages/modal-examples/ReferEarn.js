@@ -142,7 +142,6 @@ const ReferEarnModal = () => {
                   <Input
                     type="url"
                     id="referral-url"
-                    defaultValue="https://1.envato.market/vuexy_admin"
                   />
                   <InputGroupText
                     tag="a"

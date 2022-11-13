@@ -6,7 +6,7 @@ import axios from 'axios'
 import { UserCheck } from 'react-feather'
 
 // ** Custom Components
-import StatsWithLineChart from '@components/widgets/stats/StatsWithLineChart'
+import StatsWithAreaChart from '@components/widgets/stats/StatsWithAreaChart'
 
 const ActiveUsers = ({ success }) => {
   // ** State
@@ -36,7 +36,6 @@ const ActiveUsers = ({ success }) => {
     grid: {
       show: false
     },
-    colors: [success],
     dataLabels: {
       enabled: false
     },
@@ -48,7 +47,7 @@ const ActiveUsers = ({ success }) => {
       type: 'gradient',
       gradient: {
         shadeIntensity: 1,
-        gradientToColors: ['#55DD92'],
+        gradientToColors: ['#3ccf4e'],
         opacityFrom: 1,
         opacityTo: 1,
         stops: [0, 100, 100, 100]
@@ -74,14 +73,13 @@ const ActiveUsers = ({ success }) => {
   }
 
   return data !== null ? (
-    <StatsWithLineChart
+    <StatsWithAreaChart
       icon={<UserCheck size={21} />}
-      color='success'
-      stats='659.8k'
-      statTitle='Active Users'
+      color='warning'
+      stats='30,000'
+      statTitle='Ortacha YEM narxi'
       series={data.series}
-      options={options}
-      type='line'
+      type='area'
     />
   ) : null
 }

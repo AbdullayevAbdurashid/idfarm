@@ -20,9 +20,9 @@ const SubscribersGained = ({ kFormatter }) => {
   return data !== null ? (
     <StatsWithAreaChart
       icon={<Users size={21} />}
-      color='primary'
+      color='success'
       stats={kFormatter(data.analyticsData.subscribers)}
-      statTitle='Subscribers Gained'
+      statTitle="O'rtacha go'sht narxi"
       series={data.series}
       type='area'
     />

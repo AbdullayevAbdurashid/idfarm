@@ -19,8 +19,8 @@ const ChartjsLineChart = ({ labelColor, gridLineColor, warningColorShade, lineCh
         }
       },
       y: {
-        min: 0,
-        max: 400,
+        min: 2218,
+        max: 19096,
         scaleLabel: { display: true },
         ticks: {
           stepSize: 100,
@@ -48,14 +48,14 @@ const ChartjsLineChart = ({ labelColor, gridLineColor, warningColorShade, lineCh
 
   // ** Chart Data
   const data = {
-    labels: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140],
+    labels: [1992, 1998, 2003, 2008, 2016, 2017, 2017, 2022],
     datasets: [
       {
-        data: [80, 150, 180, 270, 210, 160, 160, 202, 265, 210, 270, 255, 290, 360, 375],
+        data: [5275, 5225, 5879, 8026,  11637, 12181, 13381, 14381],
         fill: false,
         tension: 0.5,
         pointRadius: 1,
-        label: 'Europe',
+        label: 'Yirik shoxliklar',
         pointHoverRadius: 5,
         pointStyle: 'circle',
         pointHoverBorderWidth: 5,
@@ -65,10 +65,10 @@ const ChartjsLineChart = ({ labelColor, gridLineColor, warningColorShade, lineCh
         pointHoverBackgroundColor: lineChartDanger
       },
       {
-        data: [80, 125, 105, 130, 215, 195, 140, 160, 230, 300, 220, 170, 210, 200, 280],
+        data: [2218, 2290, 2557, 3327, 4173, 4217, 4917, 5917],
         fill: false,
         tension: 0.5,
-        label: 'Asia',
+        label: 'Shuningdak mollar',
         pointRadius: 1,
         pointHoverRadius: 5,
         pointStyle: 'circle',
@@ -79,11 +79,11 @@ const ChartjsLineChart = ({ labelColor, gridLineColor, warningColorShade, lineCh
         pointHoverBackgroundColor: lineChartPrimary
       },
       {
-        data: [80, 99, 82, 90, 115, 115, 74, 75, 130, 155, 125, 90, 140, 130, 180],
+        data: [10329, 8697, 9929, 13523, 19096, 19698, 19998, 19998,],
         fill: false,
         tension: 0.5,
         pointRadius: 1,
-        label: 'Africa',
+        label: 'Echki va qoylar',
         pointHoverRadius: 5,
         pointStyle: 'circle',
         pointHoverBorderWidth: 5,

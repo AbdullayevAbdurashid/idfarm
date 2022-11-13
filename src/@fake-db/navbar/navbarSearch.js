@@ -25,8 +25,8 @@ export const searchArr = [
         id: 3,
         target: 'email',
         isBookmarked: true,
-        title: 'Email',
-        icon: 'Mail',
+        title: 'Sotuv qoshish',
+        icon: 'Plus',
         link: '/apps/email'
       },
       {

@@ -3,9 +3,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import "../../../assets/scss/index.css";
 //UI elements
-import SubscribersGained from "@src/views/ui-elements/cards/statistics/SubscribersGained";
-import StatsCard from "../../ui-elements/cards/statistics/StatsCard";
-
+import SubscribersGained from "../../ui-elements/cards/statistics/SubscribersGained";
+import ActiveUsers from "../../ui-elements/cards/statistics/ActiveUsers"; 
 //Map
 import uzbekistan from "@svg-maps/uzbekistan";
 import { SVGMap } from "react-svg-map";
@@ -49,7 +48,6 @@ function Main() {
       <Row>
         <Col md={6} sm={12} className="example">
           <SVGMap className="map" map={uzbekistan} />
-
           <div className="legend">
             <ul>
               <li>Qoshilish etapida</li>
@@ -61,7 +59,7 @@ function Main() {
         <Col md={6}>
           <ApexRadiarChart
             title={"O'zbekistondagi chorvalar statistikasi"}
-            description={"Oxirgi 30 kun ihcidagi malumot"}
+            description={"Oxirgi 30 kun ichidagi malumot"}
             labels={["Mollar", "Qoylar", "Otlar"]}
           />
         </Col>
@@ -71,11 +69,10 @@ function Main() {
           <SubscribersGained kFormatter={kFormatter}></SubscribersGained>
         </Col>
         <Col md={6}>
-          <StatsCard cols={4}></StatsCard>
+          <ActiveUsers kFormatter={kFormatter}></ActiveUsers>
         </Col>
       </Row>
       <Row>
-        {" "}
         <LineChart
           labelColor={labelColor}
           gridLineColor={gridLineColor}

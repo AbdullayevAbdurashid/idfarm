@@ -7,7 +7,7 @@ import Avatar from '@components/avatar'
 // ** Third Party Components
 import classnames from 'classnames'
 import PerfectScrollbar from 'react-perfect-scrollbar'
-import { Bell, X, Check, AlertTriangle } from 'react-feather'
+import { Bell, X, Check, AlertTriangle, Info } from 'react-feather'
 
 // ** Reactstrap Imports
 import { Button, Badge, Input, DropdownMenu, DropdownItem, DropdownToggle, UncontrolledDropdown } from 'reactstrap'
@@ -15,69 +15,53 @@ import { Button, Badge, Input, DropdownMenu, DropdownItem, DropdownToggle, Uncon
 const NotificationDropdown = () => {
   // ** Notification Array
   const notificationsArray = [
+  
     {
-      img: require('@src/assets/images/portrait/small/avatar-s-15.jpg').default,
-      subtitle: 'Won the monthly best seller badge.',
+      avatarIcon: <AlertTriangle size={14} />,
+      color: 'light-warning',
+      subtitle: 'Yem yana 2 kunga yetadi',
       title: (
         <p className='media-heading'>
-          <span className='fw-bolder'>Congratulation Sam 🎉</span>winner!
+          <span className='fw-bolder'>Omborda kam miqdorda yem qoldi </span>
         </p>
       )
     },
     {
-      img: require('@src/assets/images/portrait/small/avatar-s-3.jpg').default,
-      subtitle: 'You have 10 unread messages.',
+      avatarIcon: <Info size={14} />,
+      color: 'info',
+      subtitle: '12.11.2022 Yangi xodim ishchi lavozimida qoshildi',
       title: (
         <p className='media-heading'>
-          <span className='fw-bolder'>New message</span>&nbsp;received
+          <span className='fw-bolder'>Yangi xodim qoshildi</span>&nbsp;Abduvali
         </p>
       )
     },
     {
-      avatarContent: 'MD',
-      color: 'light-danger',
-      subtitle: 'MD Inc. order updated',
-      title: (
-        <p className='media-heading'>
-          <span className='fw-bolder'>Revised Order 👋</span>&nbsp;checkout
-        </p>
-      )
-    },
-    {
-      title: <h6 className='fw-bolder me-auto mb-0'>System Notifications</h6>,
+      title: <h6 className='fw-bolder me-auto mb-0'>Sistema Bildirishnomalari</h6>,
       switch: (
         <div className='form-check form-switch'>
           <Input type='switch' name='customSwitch' id='exampleCustomSwitch' defaultChecked />
         </div>
       )
     },
-    {
-      avatarIcon: <X size={14} />,
-      color: 'light-danger',
-      subtitle: 'USA Server is down due to hight CPU usage',
-      title: (
-        <p className='media-heading'>
-          <span className='fw-bolder'>Server down</span>&nbsp;registered
-        </p>
-      )
-    },
+
     {
       avatarIcon: <Check size={14} />,
       color: 'light-success',
-      subtitle: 'Last month sales report generated',
+      subtitle: "O'tgan oy savdo hisoboti",
       title: (
         <p className='media-heading'>
-          <span className='fw-bolder'>Sales report</span>&nbsp;generated
+          <span className='fw-bolder'>O'tgan oy savdo hisoboti tayyor</span>
         </p>
       )
     },
     {
       avatarIcon: <AlertTriangle size={14} />,
       color: 'light-warning',
-      subtitle: 'BLR Server using high memory',
+      subtitle: 'Iltimos tolovni 20/11/2022ga qadar bajaring',
       title: (
         <p className='media-heading'>
-          <span className='fw-bolder'>High memory</span>&nbsp;usage
+          <span className='fw-bolder'>Sizni tarif rejangiz yaqinda tugaydi</span>&nbsp;
         </p>
       )
     }
@@ -162,16 +146,16 @@ const NotificationDropdown = () => {
       <DropdownMenu end tag='ul' className='dropdown-menu-media mt-0'>
         <li className='dropdown-menu-header'>
           <DropdownItem className='d-flex' tag='div' header>
-            <h4 className='notification-title mb-0 me-auto'>Notifications</h4>
+            <h4 className='notification-title mb-0 me-auto'>Bildirishnomalar</h4>
             <Badge tag='div' color='light-primary' pill>
-              6 New
+              6 yangi
             </Badge>
           </DropdownItem>
         </li>
         {renderNotificationItems()}
         <li className='dropdown-menu-footer'>
           <Button color='primary' block>
-            Read all notifications
+          Barcha bildirishnomalarni o'qish
           </Button>
         </li>
       </DropdownMenu>

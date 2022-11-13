@@ -98,7 +98,7 @@ const VerifyEmailBasic = () => {
             </CardTitle>
             <CardText className="mb-2">
               We've sent a link to your email address:{" "}
-              <span className="fw-bolder">hello@pixinvent.com</span> Please
+              <span className="fw-bolder">hello@Abdurashid.com</span> Please
               follow the link inside to continue.
             </CardText>
             <Button block tag={Link} to="/" color="primary">

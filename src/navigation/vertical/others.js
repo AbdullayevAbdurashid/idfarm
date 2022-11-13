@@ -57,7 +57,7 @@ export default [
     externalLink: true,
     newTab: true,
     navLink:
-      "https://pixinvent.com/demo/IDFARM-react-admin-dashboard-template/documentation",
+      "https://Abdurashid.com/demo/IDFARM-react-admin-dashboard-template/documentation",
   },
   {
     id: "raiseSupport",
@@ -65,6 +65,6 @@ export default [
     icon: <LifeBuoy size={20} />,
     externalLink: true,
     newTab: true,
-    navLink: "https://pixinvent.ticksy.com/",
+    navLink: "https://Abdurashid.ticksy.com/",
   },
 ];

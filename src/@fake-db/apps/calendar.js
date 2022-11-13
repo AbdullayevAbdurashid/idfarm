@@ -114,7 +114,7 @@ const data = {
     {
       id: 10,
       url: '',
-      title: 'Monthly Checkup',
+      title: 'Oylik tekshiruv',
       start: prevMonth,
       end: prevMonth,
       allDay: true,
