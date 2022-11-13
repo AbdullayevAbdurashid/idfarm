@@ -24,7 +24,7 @@ function Heard() {
     series2: colors.info.main,
   };
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col md={6}>
           <Card>
