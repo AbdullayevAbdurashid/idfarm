@@ -1,34 +1,28 @@
 // ** Reactstrap Imports
 import { Nav, NavItem, NavLink } from "reactstrap";
-
+import { FaSyringe, FaVirus } from "react-icons/fa";
 // ** Icons Imports
-import { User, Lock, Bookmark, Link, Bell } from "react-feather";
+import { Bell, Info } from "react-feather";
 
 const Tabs = ({ activeTab, toggleTab }) => {
   return (
     <Nav pills className="mb-2">
       <NavItem>
         <NavLink active={activeTab === "1"} onClick={() => toggleTab("1")}>
-          <User size={18} className="me-50" />
-          <span className="fw-bold">Account</span>
+          <Info size={18} className="me-50" />
+          <span className="fw-bold">Malumot</span>
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink active={activeTab === "2"} onClick={() => toggleTab("2")}>
-          <Lock size={18} className="me-50" />
-          <span className="fw-bold">Xafsizlik</span>
+          <FaSyringe size={18} className="me-50" />
+          <span className="fw-bold">Emlash jadvali</span>
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink active={activeTab === "3"} onClick={() => toggleTab("3")}>
-          <Bookmark size={18} className="me-50" />
-          <span className="fw-bold">Tolov</span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink active={activeTab === "4"} onClick={() => toggleTab("4")}>
-          <Bell size={18} className="me-50" />
-          <span className="fw-bold">Bildirishnomalar</span>
+          <FaVirus size={18} className="me-50" />
+          <span className="fw-bold">Kasallik royhati</span>
         </NavLink>
       </NavItem>
     </Nav>

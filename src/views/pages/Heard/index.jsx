@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Row, Container, Col, Card, CardHeader, CardBody } from "reactstrap";
-
+import { useNavigate } from "react-router-dom";
 //Icons
 import { GiSheep, GiMale, GiFemale, GiDeathSkull } from "react-icons/gi";
 import { FaSyringe } from "react-icons/fa";
@@ -19,6 +19,12 @@ import { heardCount, deathCount } from "./mockdata";
 
 function Heard() {
   const { colors } = useContext(ThemeColors);
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/pages/royhat");
+  }
+
   const donut = {
     series1: colors.primary.main,
     series2: colors.info.main,
@@ -43,8 +49,8 @@ function Heard() {
         <Col d={6}>
           <Row>
             <Col md={4}>
-              <Card>
-                <CardBody>
+              <Card onClick={handleClick}>
+                <CardBody className="clickable" onClick={handleClick}>
                   <Avatar
                     color={"light-warning"}
                     icon={<GiSheep size={40} />}
@@ -56,7 +62,7 @@ function Heard() {
             </Col>
             <Col md={4}>
               <Card>
-                <CardBody>
+                <CardBody className="clickable" onClick={handleClick}>
                   <Avatar
                     color={"light-info"}
                     icon={<GiMale size={40} />}
@@ -70,7 +76,7 @@ function Heard() {
             </Col>
             <Col md={4}>
               <Card>
-                <CardBody>
+                <CardBody className="clickable" onClick={handleClick}>
                   <Avatar
                     color={"light-primary"}
                     icon={<GiFemale size={40} />}

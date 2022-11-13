@@ -86,3 +86,6 @@
     font-family: FontAwesome;
   }
 }
+.clickable:hover{
+  cursor: pointer;
+}

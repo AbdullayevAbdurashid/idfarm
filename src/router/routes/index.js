@@ -12,7 +12,7 @@ import UiElementRoutes from "./UiElements";
 import ExtensionsRoutes from "./Extensions";
 import PageLayoutsRoutes from "./PageLayouts";
 import AuthenticationRoutes from "./Authentication";
-
+import CowsRouter from "./Cows.js";
 // ** Layouts
 import BlankLayout from "@layouts/BlankLayout";
 import VerticalLayout from "@src/layouts/VerticalLayout";
@@ -50,6 +50,7 @@ const Routes = [
   ...FormRoutes,
   ...TablesRoutes,
   ...ChartsRoutes,
+  ...CowsRouter,
 ];
 
 const getRouteMeta = (route) => {
