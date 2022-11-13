@@ -7,7 +7,7 @@ import axios from 'axios'
 // ** Custom Components
 import TinyChartStats from '@components/widgets/stats/TinyChartStats'
 
-const ProfitLineChart = ({ info }) => {
+const ProfitLineChart = ({ info,name,number }) => {
   // ** State
   const [data, setData] = useState(null)
 
@@ -104,8 +104,8 @@ const ProfitLineChart = ({ info }) => {
       height={70}
       type='line'
       options={options}
-      title={data.title}
-      stats={data.statistics}
+      title={name}
+      stats={number}
       series={data.series}
     />
   ) : null

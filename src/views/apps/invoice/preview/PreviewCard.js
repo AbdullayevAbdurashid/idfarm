@@ -71,10 +71,10 @@ const PreviewCard = ({ data }) => {
               <h3 className="text-primary invoice-logo">IDFARM</h3>
             </div>
             <CardText className="mb-25">
-              Office 149, 450 South Brand Brooklyn
+            Fargona shaxar, Quva tumani,
             </CardText>
             <CardText className="mb-25">
-              San Diego County, CA 91905, USA
+            FA 150100, Uzbekiston
             </CardText>
             <CardText className="mb-0">
               +1 (123) 456 7891, +44 (876) 543 2198

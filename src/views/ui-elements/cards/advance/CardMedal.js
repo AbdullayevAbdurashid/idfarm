@@ -8,15 +8,14 @@ const CardMedal = () => {
   return (
     <Card className='card-congratulations-medal'>
       <CardBody>
-        <h5>Congratulations 🎉 John!</h5>
-        <CardText className='font-small-3'>You have won gold medal</CardText>
+        <h5>Qora mollar soni</h5>
+        <CardText className='font-small-3'>Fermangizdagi jami qora mollar soni</CardText>
         <h3 className='mb-75 mt-2 pt-50'>
-          <a href='/' onClick={e => e.preventDefault()}>
-            $48.9k
+          <a href='/' style={{"font-size":"2rem"}} onClick={e => e.preventDefault()}>
+    13
           </a>
         </h3>
-        <Button color='primary'>View Sales</Button>
-        <img className='congratulation-medal' src={medal} alt='Medal Pic' />
+        <Button color='primary'>Sotuvlarni korish</Button>
       </CardBody>
     </Card>
   )

@@ -44,6 +44,9 @@ const AddCard = () => {
   const [picker, setPicker] = useState(new Date());
   const [invoiceNumber, setInvoiceNumber] = useState(false);
   const [dueDatepicker, setDueDatePicker] = useState(new Date());
+  const [price, setPrice] = useState(24000)
+  const [qnt, setQnt] = useState(1)
+
   const [options, setOptions] = useState([
     {
       value: "add-new",
@@ -209,16 +212,16 @@ const AddCard = () => {
                 <h3 className="text-primary invoice-logo">IDFARM</h3>
               </div>
               <p className="card-text mb-25">
-                Office 149, 450 South Brand Brooklyn
+               Fargona 84, 
               </p>
-              <p className="card-text mb-25">San Diego County, CA 91905, USA</p>
+              <p className="card-text mb-25">Fargona shaxar, Quva tumani, FA 150100, Uzbekiston</p>
               <p className="card-text mb-0">
-                +1 (123) 456 7891, +44 (876) 543 2198
+                +998 (90)123 22 33, +998 (90)234 22 33
               </p>
             </div>
             <div className="invoice-number-date mt-md-0 mt-2">
               <div className="d-flex align-items-center justify-content-md-end mb-1">
-                <h4 className="invoice-title">Invoice</h4>
+                <h4 className="invoice-title">Hisob-faktura</h4>
                 <InputGroup className="input-group-merge invoice-edit-input-group disabled">
                   <InputGroupText>
                     <Hash size={15} />
@@ -233,7 +236,7 @@ const AddCard = () => {
                 </InputGroup>
               </div>
               <div className="d-flex align-items-center mb-1">
-                <span className="title">Date:</span>
+                <span className="title">Sana:</span>
                 <Flatpickr
                   value={picker}
                   onChange={(date) => setPicker(date)}
@@ -241,7 +244,7 @@ const AddCard = () => {
                 />
               </div>
               <div className="d-flex align-items-center">
-                <span className="title">Due Date:</span>
+                <span className="title">Amal qilish sanasi :</span>
                 <Flatpickr
                   value={dueDatepicker}
                   onChange={(date) => setDueDatePicker(date)}
@@ -259,7 +262,7 @@ const AddCard = () => {
         <CardBody className="invoice-padding pt-0">
           <Row className="row-bill-to invoice-spacing">
             <Col className="col-bill-to ps-0" xl="8">
-              <h6 className="invoice-to-title">Invoice To:</h6>
+              <h6 className="invoice-to-title">Mijoz:</h6>
               <div className="invoice-customer">
                 {clients !== null ? (
                   <Fragment>
@@ -290,29 +293,29 @@ const AddCard = () => {
               </div>
             </Col>
             <Col className="pe-0 mt-xl-0 mt-2" xl="4">
-              <h6 className="mb-2">Payment Details:</h6>
+              <h6 className="mb-2">Tolov haqida malumotlar :</h6>
               <table>
                 <tbody>
                   <tr>
-                    <td className="pe-1">Total Due:</td>
+                    <td className="pe-1">Jami :</td>
                     <td>
                       <span className="fw-bolder">$12,110.55</span>
                     </td>
                   </tr>
                   <tr>
-                    <td className="pe-1">Bank name:</td>
-                    <td>American Bank</td>
+                    <td className="pe-1">Bank ismi:</td>
+                    <td>Ipoteka  Banki</td>
                   </tr>
                   <tr>
-                    <td className="pe-1">Country:</td>
-                    <td>United States</td>
+                    <td className="pe-1">Viloyat:</td>
+                    <td>Andijon</td>
                   </tr>
                   <tr>
-                    <td className="pe-1">IBAN:</td>
+                    <td className="pe-1">STIR:</td>
                     <td>ETD95476213874685</td>
                   </tr>
                   <tr>
-                    <td className="pe-1">SWIFT code:</td>
+                    <td className="pe-1">Schet raqami :</td>
                     <td>BR91905</td>
                   </tr>
                 </tbody>
@@ -341,49 +344,45 @@ const AddCard = () => {
                           sm="12"
                         >
                           <CardText className="col-title mb-md-50 mb-0">
-                            Item
+                            
                           </CardText>
                           <Input type="select" className="item-details">
-                            <option>App Design</option>
-                            <option>App Customization</option>
-                            <option>ABC Template</option>
-                            <option>App Development</option>
+                            <option>Sut</option>
+                            <option>Gusht</option>
+                            <option>Chorva</option>
                           </Input>
-                          <Input
-                            className="mt-2"
-                            type="textarea"
-                            rows="1"
-                            defaultValue="Customization & Bug Fixes"
-                          />
+                       
                         </Col>
                         <Col className="my-lg-0 my-2" lg="3" sm="12">
                           <CardText className="col-title mb-md-2 mb-0">
-                            Cost
+                            Narxi
                           </CardText>
                           <Input
                             type="number"
-                            defaultValue="24"
+                            defaultValue="24 000"
+                            onChange={(e)=>setPrice(e.target.value)}
                             placeholder="24"
                           />
                           <div className="mt-2">
-                            <span>Discount:</span> <span>0%</span>
+                            <span>Skidka:</span> <span>0%</span>
                           </div>
                         </Col>
                         <Col className="my-lg-0 my-2" lg="2" sm="12">
                           <CardText className="col-title mb-md-2 mb-0">
-                            Qty
+                            Soni
                           </CardText>
                           <Input
                             type="number"
                             defaultValue="1"
+                            onChange={(e)=>setQnt(e.target.value)}
                             placeholder="1"
                           />
                         </Col>
                         <Col className="my-lg-0 mt-2" lg="2" sm="12">
                           <CardText className="col-title mb-md-50 mb-0">
-                            Price
+                            Narxi
                           </CardText>
-                          <CardText className="mb-0">$24.00</CardText>
+                          <CardText className="mb-0"> {price*qnt}</CardText>
                         </Col>
                       </Row>
                       <div className="d-flex justify-content-center border-start invoice-product-actions py-50 px-25">
@@ -408,13 +407,12 @@ const AddCard = () => {
                 onClick={() => setCount(count + 1)}
               >
                 <Plus size={14} className="me-25"></Plus>{" "}
-                <span className="align-middle">Add Item</span>
+                <span className="align-middle">Yangi tovar qoshish</span>
               </Button>
             </Col>
           </Row>
         </CardBody>
 
-        {/* /Product Details */}
 
         {/* Invoice Total */}
         <CardBody className="invoice-padding">
@@ -426,13 +424,13 @@ const AddCard = () => {
             >
               <div className="d-flex align-items-center mb-1">
                 <Label for="salesperson" className="form-label">
-                  Salesperson:
+                  Sotuvchi:
                 </Label>
                 <Input
                   type="text"
                   className="ms-50"
                   id="salesperson"
-                  placeholder="Edward Crowley"
+                  placeholder="Rustam Abdullaev"
                 />
               </div>
             </Col>
@@ -443,20 +441,20 @@ const AddCard = () => {
             >
               <div className="invoice-total-wrapper">
                 <div className="invoice-total-item">
-                  <p className="invoice-total-title">Subtotal:</p>
+                  <p className="invoice-total-title">Oraliq jami:</p>
                   <p className="invoice-total-amount">$1800</p>
                 </div>
                 <div className="invoice-total-item">
-                  <p className="invoice-total-title">Discount:</p>
+                  <p className="invoice-total-title">Skidka:</p>
                   <p className="invoice-total-amount">$28</p>
                 </div>
                 <div className="invoice-total-item">
-                  <p className="invoice-total-title">Tax:</p>
+                  <p className="invoice-total-title">Nalog:</p>
                   <p className="invoice-total-amount">21%</p>
                 </div>
                 <hr className="my-50" />
                 <div className="invoice-total-item">
-                  <p className="invoice-total-title">Total:</p>
+                  <p className="invoice-total-title">Jami:</p>
                   <p className="invoice-total-amount">$1690</p>
                 </div>
               </div>
@@ -473,9 +471,9 @@ const AddCard = () => {
             <Col>
               <div className="mb-2">
                 <Label for="note" className="form-label fw-bold">
-                  Note:
+                  Qoshimcha:
                 </Label>
-                <Input type="textarea" rows="2" id="note" defaultValue={note} />
+                <Input type="textarea" rows="2" id="note" />
               </div>
             </Col>
           </Row>
@@ -494,13 +492,13 @@ const AddCard = () => {
         <Form>
           <div className="mb-2">
             <Label for="customer-name" className="form-label">
-              Customer Name
+               Mijoz ismi
             </Label>
             <Input id="customer-name" placeholder="John Doe" />
           </div>
           <div className="mb-2">
             <Label for="customer-email" className="form-label">
-              Customer Email
+               Email
             </Label>
             <Input
               type="email"
@@ -510,7 +508,7 @@ const AddCard = () => {
           </div>
           <div className="mb-2">
             <Label for="customer-address" className="form-label">
-              Customer Address
+              Address
             </Label>
             <Input
               type="textarea"
@@ -522,7 +520,7 @@ const AddCard = () => {
           </div>
           <div className="mb-2">
             <Label for="country" className="form-label">
-              Country
+              Davlati
             </Label>
             <Select
               theme={selectThemeColors}
@@ -534,7 +532,7 @@ const AddCard = () => {
           </div>
           <div className="mb-2">
             <Label for="customer-contact" className="form-label">
-              Contact
+              Kontakt malumotlar
             </Label>
             <Input
               type="number"
@@ -548,10 +546,10 @@ const AddCard = () => {
               color="primary"
               onClick={() => setOpen(false)}
             >
-              Add
+              Qoshish
             </Button>
             <Button color="secondary" onClick={() => setOpen(false)} outline>
-              Cancel
+              Bekor qilish
             </Button>
           </div>
         </Form>

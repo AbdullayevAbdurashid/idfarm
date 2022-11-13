@@ -82,11 +82,11 @@ const RevenueReport = props => {
     },
     revenueSeries = [
       {
-        name: 'Earning',
+        name: 'Foyda',
         data: [95, 177, 284, 256, 105, 63, 168, 218, 72]
       },
       {
-        name: 'Expense',
+        name: 'Zarar',
         data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
       }
     ]
@@ -122,15 +122,15 @@ const RevenueReport = props => {
       <Row className='mx-0'>
         <Col className='revenue-report-wrapper' md='8' xs='12'>
           <div className='d-sm-flex justify-content-between align-items-center mb-3'>
-            <CardTitle className='mb-50 mb-sm-0'>Revenue Report</CardTitle>
+            <CardTitle className='mb-50 mb-sm-0'>Bitta mol uchun harajat</CardTitle>
             <div className='d-flex align-items-center'>
               <div className='d-flex align-items-center me-2'>
                 <span className='bullet bullet-primary me-50 cursor-pointer'></span>
-                <span>Earning</span>
+                <span>Foyda</span>
               </div>
               <div className='d-flex align-items-center'>
                 <span className='bullet bullet-warning me-50 cursor-pointer'></span>
-                <span>Expense</span>
+                <span>Zarar</span>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ const RevenueReport = props => {
         <Col className='budget-wrapper' md='4' xs='12'>
           <UncontrolledButtonDropdown>
             <DropdownToggle className='budget-dropdown' outline color='primary' size='sm' caret>
-              2020
+              2022
             </DropdownToggle>
             <DropdownMenu>
               {data.years.map(item => (
@@ -151,11 +151,10 @@ const RevenueReport = props => {
           </UncontrolledButtonDropdown>
           <h2 className='mb-25'>${data.price}</h2>
           <div className='d-flex justify-content-center'>
-            <span className='fw-bolder me-25'>Budget:</span>
+            <span className='fw-bolder me-25'>Sof foyda:</span>
             <span>{data.budget}</span>
           </div>
           <Chart id='budget-chart' type='line' height='80' options={budgetOptions} series={budgetSeries} />
-          <Button color='primary'>Increase Budget</Button>
         </Col>
       </Row>
     </Card>

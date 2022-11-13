@@ -1,7 +1,8 @@
 // ** Third Party Components
 import classnames from 'classnames'
 import { TrendingUp, User, Box, DollarSign } from 'react-feather'
-
+import { FaSyringe } from "react-icons/fa";
+import {GiSkullWithSyringe,GiCow,GiDeathSkull} from "react-icons/gi"
 // ** Custom Components
 import Avatar from '@components/avatar'
 
@@ -11,28 +12,28 @@ import { Card, CardHeader, CardTitle, CardBody, CardText, Row, Col } from 'react
 const StatsCard = ({ cols }) => {
   const data = [
     {
-      title: '230k',
-      subtitle: 'Sales',
+      title: '15',
+      subtitle: 'Emlanganlar',
       color: 'light-primary',
-      icon: <TrendingUp size={24} />
+      icon: <FaSyringe size={24} />
     },
     {
-      title: '8.549k',
-      subtitle: 'Customers',
+      title: '5',
+      subtitle: 'Emlanmaganlar',
       color: 'light-info',
-      icon: <User size={24} />
+      icon: <GiSkullWithSyringe size={24} />
     },
     {
-      title: '1.423k',
-      subtitle: 'Products',
-      color: 'light-danger',
-      icon: <Box size={24} />
-    },
-    {
-      title: '$9745',
-      subtitle: 'Revenue',
+      title: '5',
+      subtitle: 'Uruglanganlar',
       color: 'light-success',
-      icon: <DollarSign size={24} />
+      icon: <GiCow size={24} />
+    },
+    {
+      title: '3',
+      subtitle: 'Olganlar',
+      color: 'light-danger',
+      icon: <GiDeathSkull size={24} />
     }
   ]
 
@@ -63,8 +64,8 @@ const StatsCard = ({ cols }) => {
   return (
     <Card className='card-statistics'>
       <CardHeader>
-        <CardTitle tag='h4'>Statistics</CardTitle>
-        <CardText className='card-text font-small-2 me-25 mb-0'>Updated 1 month ago</CardText>
+        <CardTitle tag='h4'>Statistika</CardTitle>
+        <CardText className='card-text font-small-2 me-25 mb-0'>1 hafta oldin yangilangan</CardText>
       </CardHeader>
       <CardBody className='statistics-body'>
         <Row>{renderData()}</Row>

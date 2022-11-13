@@ -27,7 +27,7 @@ export const searchArr = [
         isBookmarked: true,
         title: 'Sotuv qoshish',
         icon: 'Plus',
-        link: '/apps/email'
+        link: '/apps/invoice/add'
       },
       {
         id: 4,
@@ -37,14 +37,7 @@ export const searchArr = [
         icon: 'MessageSquare',
         link: '/apps/chat'
       },
-      {
-        id: 5,
-        target: 'todo',
-        isBookmarked: true,
-        title: 'Todo',
-        icon: 'CheckSquare',
-        link: '/apps/todo'
-      },
+      
       {
         id: 6,
         target: 'calendar',

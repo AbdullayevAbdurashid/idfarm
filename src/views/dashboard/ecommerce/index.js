@@ -19,7 +19,7 @@ import OrdersBarChart from '@src/views/ui-elements/cards/statistics/OrdersBarCha
 import CardTransactions from '@src/views/ui-elements/cards/advance/CardTransactions'
 import ProfitLineChart from '@src/views/ui-elements/cards/statistics/ProfitLineChart'
 import CardBrowserStates from '@src/views/ui-elements/cards/advance/CardBrowserState'
-
+//s
 // ** Styles
 import '@styles/react/libs/charts/apex-charts.scss'
 import '@styles/base/pages/dashboard-ecommerce.scss'
@@ -45,10 +45,10 @@ const EcommerceDashboard = () => {
         <Col lg='4' md='12'>
           <Row className='match-height'>
             <Col lg='6' md='3' xs='6'>
-              <OrdersBarChart warning={colors.warning.main} />
+            <ProfitLineChart name={"Buqalar"} number={10} info={colors.info.main} />
             </Col>
             <Col lg='6' md='3' xs='6'>
-              <ProfitLineChart info={colors.info.main} />
+              <ProfitLineChart name={"Sigir"} number={10} info={colors.warning.main} />
             </Col>
             <Col lg='12' md='6' xs='12'>
               <Earnings success={colors.success.main} />
@@ -59,23 +59,7 @@ const EcommerceDashboard = () => {
           <RevenueReport primary={colors.primary.main} warning={colors.warning.main} />
         </Col>
       </Row>
-      <Row className='match-height'>
-        <Col lg='8' xs='12'>
-          <CompanyTable />
-        </Col>
-        <Col lg='4' md='6' xs='12'>
-          <CardMeetup />
-        </Col>
-        <Col lg='4' md='6' xs='12'>
-          <CardBrowserStates colors={colors} trackBgColor={trackBgColor} />
-        </Col>
-        <Col lg='4' md='6' xs='12'>
-          <GoalOverview success={colors.success.main} />
-        </Col>
-        <Col lg='4' md='6' xs='12'>
-          <CardTransactions />
-        </Col>
-      </Row>
+    
     </div>
   )
 }

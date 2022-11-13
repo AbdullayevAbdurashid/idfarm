@@ -16,7 +16,7 @@ const Earnings = ({ success }) => {
     },
     legend: { show: false },
     comparedResult: [2, -3, 8],
-    labels: ['App', 'Service', 'Product'],
+    labels: ['Sut', 'Gushtlar', 'Sotuvlar'],
     stroke: { width: 0 },
     colors: ['#28c76f66', '#28c76f33', success],
     grid: {
@@ -44,7 +44,7 @@ const Earnings = ({ success }) => {
             total: {
               show: true,
               offsetY: 15,
-              label: 'App',
+              label: 'Umumiy',
               formatter() {
                 return '53%'
               }
@@ -94,12 +94,12 @@ const Earnings = ({ success }) => {
       <CardBody>
         <Row>
           <Col xs='6'>
-            <CardTitle className='mb-1'>Earnings</CardTitle>
-            <div className='font-small-2'>This Month</div>
-            <h5 className='mb-1'>$4055.56</h5>
+            <CardTitle className='mb-1'>Foyda</CardTitle>
+            <div className='font-small-2'>Bu oy</div>
+            <h5 className='mb-1'>4055 mln sum</h5>
             <CardText className='text-muted font-small-2'>
-              <span className='fw-bolder'>68.2%</span>
-              <span> more earnings than last month.</span>
+              <span>Otgan oydan </span>
+              <span className='fw-bolder'>68.2% koproq</span>
             </CardText>
           </Col>
           <Col xs='6'>
