@@ -19,7 +19,7 @@ const KnowledgeBase = lazy(() => import('../../views/pages/knowledge-base/Knowle
 const KnowledgeBaseCategory = lazy(() => import('../../views/pages/knowledge-base/KnowledgeBaseCategory'))
 const KBCategoryQuestion = lazy(() => import('../../views/pages/knowledge-base/KnowledgeBaseCategoryQuestion'))
 const Main = lazy(() => import('../../views/pages/Main/index.jsx'))
-
+const Heard  = lazy(()=>import("../../views/pages/Heard/index"))
 const PagesRoutes = [
   {
     path: '/main',
@@ -32,6 +32,10 @@ const PagesRoutes = [
   {
     path: '/pages/main',
     element: <Profile />
+  },
+  {
+    path: '/pages/heard',
+    element: <Heard />
   },
   {
     path: '/pages/faq',

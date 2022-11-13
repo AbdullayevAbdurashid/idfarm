@@ -7,10 +7,9 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts'
 const SimplePieChart = props => {
   // ** Chart Data
   const data = [
-    { name: 'R&D', value: 50, color: props.series2 },
-    { name: 'Operational', value: 85, color: props.series1 },
-    { name: 'Networking', value: 16, color: props.series5 },
-    { name: 'Hiring', value: 50, color: props.series3 }
+    { name: 'Buqalar', value: 50, color: props.series2 },
+    { name: 'Sigirlar', value: 85, color: props.series1 },
+   
   ]
   /*eslint-disable */
   const RADIAN = Math.PI / 180
@@ -36,11 +35,9 @@ const SimplePieChart = props => {
     <Card>
       <CardHeader>
         <div>
-          <CardTitle tag='h4'>Expense Ratio</CardTitle>
-          <small className='text-muted'>Spending on various categories</small>
+          <CardTitle tag='h4'>Chorva kategoriyalari</CardTitle>
         </div>
       </CardHeader>
-
       <CardBody>
         <div className='recharts-wrapper'>
           <ResponsiveContainer>
@@ -55,21 +52,14 @@ const SimplePieChart = props => {
         </div>
         <div className='d-flex align-items-center justify-content-center flex-wrap'>
           <div className='me-2'>
-            <span className='bullet bullet-sm bullet-bordered me-50' style={{ backgroundColor: '#ffe700' }}></span>
-            <span className='me-75'>Operational</span>
+            <span className='bullet bullet-sm bullet-bordered me-50' style={{ backgroundColor: props.series2  }}></span>
+            <span className='me-75'>Buqalar</span>
           </div>
           <div className='me-2'>
-            <span className='bullet bullet-sm bullet-bordered me-50' style={{ backgroundColor: '#ffa1a1' }}></span>
-            <span className='me-75'>Networking</span>
+            <span className='bullet bullet-sm bullet-bordered me-50' style={{ backgroundColor: props.series1}}></span>
+            <span className='me-75'>Sigirlar</span>
           </div>
-          <div className='me-2'>
-            <span className='bullet bullet-sm bullet-primary bullet-bordered me-50'></span>
-            <span className='me-75'>Hiring</span>
-          </div>
-          <div>
-            <span className='bullet bullet-sm bullet-bordered me-50' style={{ backgroundColor: '#00d4bd' }}></span>
-            <span className='me-75'>R&amp;D</span>
-          </div>
+        
         </div>
       </CardBody>
     </Card>

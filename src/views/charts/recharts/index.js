@@ -28,10 +28,10 @@ const Recharts = () => {
 
   // ** Vars
   const donut = {
-    series1: '#ffe700',
-    series2: '#00d4bd',
-    series3: '#826bf8',
-    series4: '#2b9bf4',
+    series1: '#057507',
+    series2: '#854105',
+    series3: '#0a1e61',
+    series4: '#360a61',
     series5: '#FFA1A1'
   }
 

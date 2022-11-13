@@ -98,7 +98,7 @@
           margin-right: 0;
           font-size: inherit;
           .brand-logo img {
-            max-width: 36px;
+            max-width: 236px;
           }
 
           // Brand Text Scss
@@ -113,7 +113,9 @@
         }
       }
     }
-
+    .brand-logo{
+      width: 200px !important;
+    }
     &.navbar-horizontal {
       .nav-link {
         &.dropdown-toggle {

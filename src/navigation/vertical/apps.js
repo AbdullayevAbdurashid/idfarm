@@ -3,7 +3,7 @@ import { Mail, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingC
 
 export default [
   {
-    header: 'Apps & Pages'
+    header: 'Dastur'
   },
   {
     id: 'chat',
