@@ -32,8 +32,8 @@ import illustration from "@src/assets/images/illustration/faq-illustrations.svg"
 // ** Vars
 const data = [
   {
-    totalUsers: 4,
-    title: "Administrator",
+    totalUsers: 1,
+    title: " Sotuv Menegeri",
     users: [
       {
         size: "sm",
@@ -59,7 +59,7 @@ const data = [
   },
   {
     totalUsers: 7,
-    title: "Manager",
+    title: "Ferma nazarotchisi",
     users: [
       {
         size: "sm",
@@ -90,7 +90,7 @@ const data = [
   },
   {
     totalUsers: 5,
-    title: "Users",
+    title: "Ferma ishchilari",
     users: [
       {
         size: "sm",
@@ -119,81 +119,9 @@ const data = [
       },
     ],
   },
-  {
-    totalUsers: 3,
-    title: "Support",
-    users: [
-      {
-        size: "sm",
-        title: "Kim Karlos",
-        img: require("@src/assets/images/avatars/3.png").default,
-      },
-      {
-        size: "sm",
-        title: "Katy Turner",
-        img: require("@src/assets/images/avatars/9.png").default,
-      },
-      {
-        size: "sm",
-        title: "Peter Adward",
-        img: require("@src/assets/images/avatars/12.png").default,
-      },
-      {
-        size: "sm",
-        title: "Kaith Dsouza",
-        img: require("@src/assets/images/avatars/10.png").default,
-      },
-      {
-        size: "sm",
-        title: "John Parker",
-        img: require("@src/assets/images/avatars/11.png").default,
-      },
-    ],
-  },
-  {
-    totalUsers: 2,
-    title: "Restricted User",
-    users: [
-      {
-        size: "sm",
-        title: "Kim Merchent",
-        img: require("@src/assets/images/avatars/10.png").default,
-      },
-      {
-        size: "sm",
-        title: "Sam Dsouza",
-        img: require("@src/assets/images/avatars/6.png").default,
-      },
-      {
-        size: "sm",
-        title: "Nurvi Karlos",
-        img: require("@src/assets/images/avatars/3.png").default,
-      },
-      {
-        size: "sm",
-        title: "Andrew Tye",
-        img: require("@src/assets/images/avatars/8.png").default,
-      },
-      {
-        size: "sm",
-        title: "Rossie Kim",
-        img: require("@src/assets/images/avatars/9.png").default,
-      },
-    ],
-  },
 ];
 
-const rolesArr = [
-  "User Management",
-  "Content Management",
-  "Disputes Management",
-  "Database Management",
-  "Financial Management",
-  "Reporting",
-  "API Control",
-  "Repository Management",
-  "Payroll",
-];
+const rolesArr = ["Statistika", "Moliya", "Ombor"];
 
 const RoleCards = () => {
   // ** States
@@ -239,7 +167,7 @@ const RoleCards = () => {
               <Card>
                 <CardBody>
                   <div className="d-flex justify-content-between">
-                    <span>{`Total ${item.totalUsers} users`}</span>
+                    <span>{`Bu lavozimda ${item.totalUsers}ta odam ishlayapti`}</span>
                     <AvatarGroup data={item.users} />
                   </div>
                   <div className="d-flex justify-content-between align-items-end mt-1 pt-25">
@@ -254,7 +182,9 @@ const RoleCards = () => {
                           setShow(true);
                         }}
                       >
-                        <small className="fw-bolder">Edit Role</small>
+                        <small className="fw-bolder">
+                          Lavozim vazifalarini ozgartirish
+                        </small>
                       </Link>
                     </div>
                     <Link
@@ -295,7 +225,9 @@ const RoleCards = () => {
                   >
                     Yangi lavozim qoshish
                   </Button>
-                  <p className="mb-0">Add a new role, if it does not exist</p>
+                  <p className="mb-0">
+                    Agar oldin mavjud bolmagan bolsa yangi rol qoshing
+                  </p>
                 </CardBody>
               </Col>
             </Row>
@@ -315,12 +247,12 @@ const RoleCards = () => {
         <ModalBody className="px-5 pb-5">
           <div className="text-center mb-4">
             <h1>{modalType} Role</h1>
-            <p>Set role permissions</p>
+            <p>Lavozim ruxsatlarini kiriting</p>
           </div>
           <Row tag="form" onSubmit={handleSubmit(onSubmit)}>
             <Col xs={12}>
               <Label className="form-label" for="roleName">
-                Role Name
+                Lavozim nomi
               </Label>
               <Controller
                 name="roleName"
@@ -339,7 +271,7 @@ const RoleCards = () => {
               )}
             </Col>
             <Col xs={12}>
-              <h4 className="mt-2 pt-50">Role Permissions</h4>
+              <h4 className="mt-2 pt-50">Lavozimlar va ruxsatlar</h4>
               <Table className="table-flush-spacing" responsive>
                 <tbody>
                   <tr>
@@ -374,7 +306,7 @@ const RoleCards = () => {
                                 className="form-check-label"
                                 for={`read-${role}`}
                               >
-                                Read
+                                Oqish
                               </Label>
                             </div>
                             <div className="form-check me-3 me-lg-5">
@@ -383,7 +315,7 @@ const RoleCards = () => {
                                 className="form-check-label"
                                 for={`write-${role}`}
                               >
-                                Write
+                                Yozish
                               </Label>
                             </div>
                             <div className="form-check">
@@ -392,7 +324,7 @@ const RoleCards = () => {
                                 className="form-check-label"
                                 for={`create-${role}`}
                               >
-                                Create
+                                Narsa qoshish
                               </Label>
                             </div>
                           </div>
@@ -405,7 +337,7 @@ const RoleCards = () => {
             </Col>
             <Col className="text-center mt-2" xs={12}>
               <Button type="submit" color="primary" className="me-1">
-                Submit
+                Tasdiqlash
               </Button>
               <Button type="reset" outline onClick={onReset}>
                 Discard

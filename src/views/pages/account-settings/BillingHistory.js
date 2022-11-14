@@ -202,7 +202,7 @@ const columns = [
     selector: ({ issuedDate }) => issuedDate,
   },
   {
-    name: "Due Date",
+    name: "Muddati",
     minWidth: "200px",
     cell: (row) => row.dueDate,
     selector: ({ dueDate }) => dueDate,

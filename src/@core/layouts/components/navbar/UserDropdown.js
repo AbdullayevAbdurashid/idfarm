@@ -15,10 +15,7 @@ import { handleLogout } from "@store/authentication";
 // ** Third Party Components
 import {
   User,
-  Mail,
-  CheckSquare,
   MessageSquare,
-  Settings,
   CreditCard,
   HelpCircle,
   Power,
@@ -62,43 +59,32 @@ const UserDropdown = () => {
       >
         <div className="user-nav d-sm-flex d-none">
           <span className="user-name fw-bold">
-            {(userData && userData["username"]) || "John Doe"}
+            {(userData && userData["username"]) || "Abdurashid"}
           </span>
           <span className="user-status">
-            {(userData && userData.role) || "Admin"}
+            {(userData && userData.role) || "Boshliq"}
           </span>
         </div>
         <Avatar img={userAvatar} imgHeight="40" imgWidth="40" status="online" />
       </DropdownToggle>
       <DropdownMenu end>
-        <DropdownItem tag={Link} to="/pages/profile">
+        <DropdownItem tag={Link} to="/pages/account-settings">
           <User size={14} className="me-75" />
-          <span className="align-middle">Profile</span>
+          <span className="align-middle">Profil</span>
         </DropdownItem>
-        <DropdownItem tag={Link} to="/apps/email">
-          <Mail size={14} className="me-75" />
-          <span className="align-middle">Inbox</span>
-        </DropdownItem>
-        <DropdownItem tag={Link} to="/apps/todo">
-          <CheckSquare size={14} className="me-75" />
-          <span className="align-middle">Tasks</span>
-        </DropdownItem>
+
         <DropdownItem tag={Link} to="/apps/chat">
           <MessageSquare size={14} className="me-75" />
-          <span className="align-middle">Chats</span>
+          <span className="align-middle">Xabarlar</span>
         </DropdownItem>
         <DropdownItem divider />
-        <DropdownItem tag={Link} to="/pages/account-settings">
-          <Settings size={14} className="me-75" />
-          <span className="align-middle">Settings</span>
-        </DropdownItem>
         <DropdownItem tag={Link} to="/pages/pricing">
           <CreditCard size={14} className="me-75" />
-          <span className="align-middle">Pricing</span>
+          <span className="align-middle">Tolovlar</span>
         </DropdownItem>
         <DropdownItem tag={Link} to="/pages/faq">
           <HelpCircle size={14} className="me-75" />
-          <span className="align-middle">FAQ</span>
+          <span className="align-middle">Dastur boyicha yordam</span>
         </DropdownItem>
         <DropdownItem
           tag={Link}
@@ -106,7 +92,7 @@ const UserDropdown = () => {
           onClick={() => dispatch(handleLogout())}
         >
           <Power size={14} className="me-75" />
-          <span className="align-middle">Logout</span>
+          <span className="align-middle">Chiqish</span>
         </DropdownItem>
       </DropdownMenu>
     </UncontrolledDropdown>

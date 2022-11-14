@@ -6,7 +6,7 @@ const data = {
     {
       id: 1,
       fullName: "Abduvali",
-      username: "Bobur",
+      username: "Abduvali",
       password: "admin",
       avatar: require("@src/assets/images/portrait/small/avatar-s-11.jpg")
         .default,
