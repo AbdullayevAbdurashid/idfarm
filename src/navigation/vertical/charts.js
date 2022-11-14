@@ -1,12 +1,6 @@
 // ** Icons Import
-import {
-  MessageSquare,
-  Circle,
-  List,
-  DollarSign,
-  PlusCircle,
-} from "react-feather";
-import { GiSheep, GiPayMoney } from "react-icons/gi";
+import { List, DollarSign, PlusCircle } from "react-feather";
+import { GiSheep, GiPayMoney, GiBarn } from "react-icons/gi";
 
 export default [
   {
@@ -31,7 +25,7 @@ export default [
     children: [
       {
         id: "invoiceList",
-        title: "Soruv royhati",
+        title: "Sotuv royhati",
         icon: <List />,
         navLink: "/apps/invoice/list",
       },
@@ -48,6 +42,19 @@ export default [
         title: "Xarajatlar",
         icon: <GiPayMoney />,
         navLink: "/pages/expenses",
+      },
+    ],
+  },
+  {
+    id: "storage",
+    title: "Ombor",
+    icon: <GiBarn size={20} />,
+    children: [
+      {
+        id: "invoiceList",
+        title: "Qoshish",
+        icon: <PlusCircle />,
+        navLink: "/pages/storage",
       },
     ],
   },

@@ -133,7 +133,7 @@ const RegisterCover = () => {
                 <Input
                   type="text"
                   id="register-username"
-                  placeholder="johndoe"
+                  placeholder="Bobur"
                   autoFocus
                 />
               </div>

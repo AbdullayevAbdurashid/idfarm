@@ -1,56 +1,56 @@
 // ** Icons Import
-import { Mail, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingCart, User, Shield } from 'react-feather'
+import {
+  Mail,
+  MessageSquare,
+  CheckSquare,
+  Calendar,
+  FileText,
+  Circle,
+  ShoppingCart,
+  User,
+  Shield,
+} from "react-feather";
 
 export default [
   {
-    header: 'Dastur'
+    header: "Dastur",
   },
   {
-    id: 'chat',
-    title: 'Xabarlar',
+    id: "chat",
+    title: "Xabarlar",
     icon: <MessageSquare size={20} />,
-    navLink: '/apps/chat'
+    navLink: "/apps/chat",
   },
 
   {
-    id: 'calendar',
-    title: 'Kalendar',
+    id: "calendar",
+    title: "Kalendar",
     icon: <Calendar size={20} />,
-    navLink: '/apps/calendar'
+    navLink: "/apps/calendar",
   },
   {
-    id: 'invoice',
-    title: 'Sotuvlar',
-    icon: <FileText size={20} />,
-    navLink: '/apps/invoice/list'
-
-
-  },
-
-  {
-    id: 'roles-permissions',
-    title: 'Ruxsat va xafsizlik',
-    icon: <Shield size={20} />,
+    id: "roles-permissions",
+    title: "Xodimlar",
+    icon: <User size={20} />,
     children: [
       {
-        id: 'roles',
-        title: 'Vazifalar',
+        id: "roles",
+        title: "Royxat",
         icon: <Circle size={12} />,
-        navLink: '/apps/roles'
+        navLink: "/apps/roles",
       },
       {
-        id: 'permissions',
-        title: 'Ruxsatlar',
+        id: "tasks",
+        title: "Vazifalar",
         icon: <Circle size={12} />,
-        navLink: '/apps/permissions'
-      }
-    ]
+        navLink: "/apps/kanban",
+      },
+      {
+        id: "permissions",
+        title: "Ruxsatlar",
+        icon: <Circle size={12} />,
+        navLink: "/apps/permissions",
+      },
+    ],
   },
- 
-  {
-    id: 'users',
-    title: 'Foydalanuvchilar',
-    icon: <User size={20} />,
-    navLink: '/apps/user/list'
-  }
-]
+];

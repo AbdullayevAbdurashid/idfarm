@@ -14,6 +14,8 @@ const ComingSoon = lazy(() => import("../../views/pages/misc/ComingSoon"));
 const ModalExamples = lazy(() => import("../../views/pages/modal-examples"));
 const Maintenance = lazy(() => import("../../views/pages/misc/Maintenance"));
 const Expenses = lazy(() => import("../../views/pages/Expenses/index"));
+const Storage = lazy(() => import("../../views/pages/storage/index"));
+
 const AccountSettings = lazy(() =>
   import("../../views/pages/account-settings")
 );
@@ -49,6 +51,10 @@ const PagesRoutes = [
   {
     path: "/pages/expenses",
     element: <Expenses />,
+  },
+  {
+    path: "/pages/storage",
+    element: <Storage />,
   },
   {
     path: "/pages/main",

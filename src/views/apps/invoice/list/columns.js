@@ -124,7 +124,7 @@ export const columns = [
     // selector: row => row.client.name,
     cell: (row) => {
       const name = row.client ? row.client.name : "John Doe",
-        email = row.client ? row.client.companyEmail : "johnDoe@email.com";
+        email = row.client ? row.client.companyEmail : "Bobur@email.com";
       return (
         <div className="d-flex justify-content-left align-items-center">
           {renderClient(row)}

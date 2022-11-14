@@ -214,7 +214,7 @@ const Register = () => {
                   render={({ field }) => (
                     <Input
                       autoFocus
-                      placeholder="johndoe"
+                      placeholder="Bobur"
                       invalid={errors.username && true}
                       {...field}
                     />

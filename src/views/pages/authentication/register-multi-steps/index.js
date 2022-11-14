@@ -42,7 +42,7 @@ const RegisterMultiSteps = () => {
       content: <PersonalInfo stepper={stepper} />,
     },
     {
-      title: "Billing",
+      title: "Tolov",
       id: "step-billing",
       subtitle: "Toʻlov tafsilotlari",
       icon: <CreditCard size={18} />,
