@@ -1,6 +1,6 @@
 // ** Icons Import
 import { List, DollarSign, PlusCircle } from "react-feather";
-import { GiSheep, GiPayMoney, GiBarn } from "react-icons/gi";
+import { GiCow, GiPayMoney, GiBarn } from "react-icons/gi";
 
 export default [
   {
@@ -9,7 +9,7 @@ export default [
   {
     id: "chat",
     title: "Chorva",
-    icon: <GiSheep size={20} />,
+    icon: <GiCow size={20} />,
     navLink: "/pages/heard",
   },
   {

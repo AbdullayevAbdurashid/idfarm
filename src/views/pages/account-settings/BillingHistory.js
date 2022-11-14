@@ -291,7 +291,7 @@ const BillingHistory = () => (
   <div className="invoice-list-wrapper">
     <Card>
       <CardHeader className="py-1">
-        <CardTitle tag="h4">Tolovlar tarixi</CardTitle>
+        <CardTitle tag="h4">To'lovlar tarixi</CardTitle>
         <UncontrolledButtonDropdown>
           <DropdownToggle outline caret>
             Export

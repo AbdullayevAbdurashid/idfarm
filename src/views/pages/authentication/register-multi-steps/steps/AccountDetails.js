@@ -149,7 +149,7 @@ const AccountDetails = ({ stepper }) => {
             <div className="form-check form-check-inline">
               <Input type="checkbox" id="remember-me" />
               <Label for="remember-me" className="form-check-label">
-                Remember Me
+                Eslab qolish
               </Label>
             </div>
           </Col>

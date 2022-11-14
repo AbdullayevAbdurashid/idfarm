@@ -80,11 +80,11 @@ const UserDropdown = () => {
         <DropdownItem divider />
         <DropdownItem tag={Link} to="/pages/pricing">
           <CreditCard size={14} className="me-75" />
-          <span className="align-middle">Tolovlar</span>
+          <span className="align-middle">To'lovlar</span>
         </DropdownItem>
         <DropdownItem tag={Link} to="/pages/faq">
           <HelpCircle size={14} className="me-75" />
-          <span className="align-middle">Dastur boyicha yordam</span>
+          <span className="align-middle">Dastur bo'yicha yordam</span>
         </DropdownItem>
         <DropdownItem
           tag={Link}

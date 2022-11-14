@@ -146,7 +146,7 @@ const LoginBasic = () => {
               <div className="form-check mb-1">
                 <Input type="checkbox" id="remember-me" />
                 <Label className="form-check-label" for="remember-me">
-                  Remember Me
+                  Eslab qolish
                 </Label>
               </div>
               <Button color="primary" block>
