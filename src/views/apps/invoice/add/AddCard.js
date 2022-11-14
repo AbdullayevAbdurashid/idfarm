@@ -404,7 +404,7 @@ const AddCard = () => {
                 onClick={() => setCount(count + 1)}
               >
                 <Plus size={14} className="me-25"></Plus>{" "}
-                <span className="align-middle">Yangi tovar qoshish</span>
+                <span className="align-middle">Yangi tovar Qo'shish</span>
               </Button>
             </Col>
           </Row>
@@ -480,7 +480,7 @@ const AddCard = () => {
       <Sidebar
         size="lg"
         open={open}
-        title="Tolov qoshish"
+        title="Tolov Qo'shish"
         headerClassName="mb-1"
         contentClassName="p-0"
         toggleSidebar={toggleSidebar}
@@ -542,7 +542,7 @@ const AddCard = () => {
               color="primary"
               onClick={() => setOpen(false)}
             >
-              Qoshish
+              Qo'shish
             </Button>
             <Button color="secondary" onClick={() => setOpen(false)} outline>
               Bekor qilish

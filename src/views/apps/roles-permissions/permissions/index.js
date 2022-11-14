@@ -10,7 +10,7 @@ import Table from "./Table";
 const Permissions = () => {
   return (
     <Fragment>
-      <h3>Foydalanuvchilar royhati</h3>
+      <h3>Foydalanuvchilar ro'yhati</h3>
       <Card>
         <div className="card-datatable app-user-list table-responsive">
           <Table />

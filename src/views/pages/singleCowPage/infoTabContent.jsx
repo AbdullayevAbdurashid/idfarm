@@ -33,7 +33,7 @@ const AccountTabs = ({ data }) => {
     <Fragment>
       <Card>
         <CardHeader className="border-bottom">
-          <CardTitle tag="h4">Profile Details</CardTitle>
+          <CardTitle tag="h4">Passport</CardTitle>
         </CardHeader>
         <CardBody className="py-2 my-25">
           <Form className=" pt-50" onSubmit={handleSubmit()}>
@@ -61,7 +61,7 @@ const AccountTabs = ({ data }) => {
                   className="react-select"
                   classNamePrefix="select"
                   options={[
-                    { value: "male", label: "Navvos" },
+                    { value: "male", label: "Buqa" },
                     { value: "female", label: "Sigir" },
                   ]}
                   defaultValue={{ value: "female", label: "Sigir" }}
@@ -69,7 +69,7 @@ const AccountTabs = ({ data }) => {
               </Col>
               <Col sm="6" className="mb-1">
                 <Label className="form-label" for="date">
-                  Tugilgan sana
+                  Tug'ilgan sana
                 </Label>
                 <Input
                   id="date"
@@ -82,7 +82,7 @@ const AccountTabs = ({ data }) => {
               </Col>
               <Col sm="6" className="mb-1">
                 <Label className="form-label" for="company">
-                  Tugulgan Vazni
+                  Tug'ilgan Vazni
                 </Label>
                 <Input
                   disabled
@@ -115,7 +115,7 @@ const AccountTabs = ({ data }) => {
                   placeholder="Otasi"
                 />
                 <Label className="form-label" for="mother">
-                  Ota mol
+                  Ona mol
                 </Label>
                 <Input
                   disabled
@@ -128,9 +128,6 @@ const AccountTabs = ({ data }) => {
               <Col className="mt-2" sm="12">
                 <Button type="submit" className="me-1" color="primary">
                   Saqlash
-                </Button>
-                <Button color="secondary" outline>
-                  Ozgarib bolmaydigan malumotlarni ozgartirish
                 </Button>
               </Col>
             </Row>

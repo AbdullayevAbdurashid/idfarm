@@ -190,14 +190,14 @@ const columns = [
     },
   },
   {
-    name: "Total",
+    name: "Umimiy",
     minWidth: "150px",
     selector: ({ total }) => total,
     cell: (row) => <span>${row.total || 0}</span>,
   },
   {
     minWidth: "200px",
-    name: "Issued Date",
+    name: "Tolov qilingan sana",
     cell: (row) => row.issuedDate,
     selector: ({ issuedDate }) => issuedDate,
   },
@@ -208,7 +208,7 @@ const columns = [
     selector: ({ dueDate }) => dueDate,
   },
   {
-    name: "Balance",
+    name: "Summa",
     minWidth: "164px",
     selector: ({ balance }) => balance,
     cell: (row) => {
@@ -222,7 +222,7 @@ const columns = [
     },
   },
   {
-    name: "Action",
+    name: "Amallar",
     minWidth: "110px",
     sortable: true,
     cell: (row) => (
@@ -291,7 +291,7 @@ const BillingHistory = () => (
   <div className="invoice-list-wrapper">
     <Card>
       <CardHeader className="py-1">
-        <CardTitle tag="h4">Billing History</CardTitle>
+        <CardTitle tag="h4">Tolovlar tarixi</CardTitle>
         <UncontrolledButtonDropdown>
           <DropdownToggle outline caret>
             Export

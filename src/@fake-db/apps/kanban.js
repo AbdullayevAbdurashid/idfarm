@@ -32,7 +32,7 @@ const data = {
       boardId: "todo",
       description: "lorem",
       dueDate: dayAfterTomorrow,
-      title: "Omborga yangi mahsulotlarni qoshish",
+      title: "Omborga yangi mahsulotlarni Qo'shish",
       attachments: [
         {
           name: "documentation.doc",

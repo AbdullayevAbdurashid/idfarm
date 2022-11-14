@@ -41,7 +41,7 @@ const PreviewActions = ({ id, setSendSidebarOpen, setAddPaymentOpen }) => {
           Edit
         </Button>
         <Button color="success" block onClick={() => setAddPaymentOpen(true)}>
-          Tolov qoshish{" "}
+          Tolov Qo'shish{" "}
         </Button>
       </CardBody>
     </Card>

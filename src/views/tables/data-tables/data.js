@@ -157,7 +157,7 @@ export const columns = [
     selector: (row) => row.race,
   },
   {
-    name: "Tugilgan sanasi",
+    name: "Tug'ilgan sanasi",
     sortable: true,
     minWidth: "150px",
     selector: (row) => row.date,

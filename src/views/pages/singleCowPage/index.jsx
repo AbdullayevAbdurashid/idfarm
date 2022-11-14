@@ -32,7 +32,7 @@ function List() {
         title="Chorva passporti"
         data={[
           { title: "Chorvalar", link: "/pages/royhat" },
-          { title: "Malumot" },
+          { title: "Ma'lumot" },
         ]}
       />
 

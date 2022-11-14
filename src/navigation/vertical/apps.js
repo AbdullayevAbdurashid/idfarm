@@ -16,8 +16,34 @@ export default [
     header: "Dastur",
   },
   {
+    id: "roles-permissions",
+    title: "Boshqaruv bo'limi",
+    icon: <User size={20} />,
+    children: [
+      {
+        id: "tasks",
+        title: "Vazifalar nazorati",
+        icon: <Circle size={12} />,
+        navLink: "/apps/kanban",
+      },
+      {
+        id: "roles",
+        title: "Xodimlar ro'yxati",
+        icon: <Circle size={12} />,
+        navLink: "/apps/roles",
+      },
+
+      {
+        id: "permissions",
+        title: "Dasturga kirish ruxsati",
+        icon: <Circle size={12} />,
+        navLink: "/apps/permissions",
+      },
+    ],
+  },
+  {
     id: "chat",
-    title: "Xabarlar",
+    title: "Ichki chat",
     icon: <MessageSquare size={20} />,
     navLink: "/apps/chat",
   },
@@ -27,30 +53,5 @@ export default [
     title: "Kalendar",
     icon: <Calendar size={20} />,
     navLink: "/apps/calendar",
-  },
-  {
-    id: "roles-permissions",
-    title: "Xodimlar",
-    icon: <User size={20} />,
-    children: [
-      {
-        id: "roles",
-        title: "Royxat",
-        icon: <Circle size={12} />,
-        navLink: "/apps/roles",
-      },
-      {
-        id: "tasks",
-        title: "Vazifalar",
-        icon: <Circle size={12} />,
-        navLink: "/apps/kanban",
-      },
-      {
-        id: "permissions",
-        title: "Ruxsatlar",
-        icon: <Circle size={12} />,
-        navLink: "/apps/permissions",
-      },
-    ],
   },
 ];

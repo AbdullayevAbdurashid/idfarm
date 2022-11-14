@@ -10,7 +10,7 @@ const Tabs = ({ activeTab, toggleTab }) => {
       <NavItem>
         <NavLink active={activeTab === "1"} onClick={() => toggleTab("1")}>
           <Info size={18} className="me-50" />
-          <span className="fw-bold">Malumot</span>
+          <span className="fw-bold">Ma'lumot</span>
         </NavLink>
       </NavItem>
       <NavItem>
@@ -22,7 +22,7 @@ const Tabs = ({ activeTab, toggleTab }) => {
       <NavItem>
         <NavLink active={activeTab === "3"} onClick={() => toggleTab("3")}>
           <FaVirus size={18} className="me-50" />
-          <span className="fw-bold">Kasallik royhati</span>
+          <span className="fw-bold">Kasallik ro'yhati</span>
         </NavLink>
       </NavItem>
     </Nav>

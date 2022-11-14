@@ -81,7 +81,7 @@ const CustomTooltip = ({ active, payload }) => {
   if (active && payload) {
     return (
       <div className="recharts-custom-tooltip">
-        <span>{`${payload[0].value} bosh`}</span>
+        <span>{`${payload[0].value} `}</span>
       </div>
     );
   }
@@ -101,11 +101,11 @@ const SimpleLineChart = ({ warning, descr, title, data, isLegend }) => {
           <div className="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
             <Badge className="badge-md mb-0 me-1" color="light-secondary">
               <ArrowDown className="text-danger me-50" size={15} />
-              Olimlar
+              O'limlar
             </Badge>
             <Badge className="badge-md" color="light-secondary">
               <ArrowUp className="text-success me-50" size={15} />
-              Tugulishlar
+              Tug'ulishlar
             </Badge>
           </div>
         ) : null}

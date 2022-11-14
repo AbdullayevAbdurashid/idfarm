@@ -39,19 +39,19 @@ export const IllnessColumns = [
     selector: (row) => row.date,
   },
   {
-    name: "Kaslllik  sanasi",
+    name: "KASALLIK  sanasi",
     minWidth: "150px",
     sortable: (row) => row.date,
     selector: (row) => row.date,
   },
   {
-    name: "Kaslllik turi",
+    name: "KASALLIK turi",
     minWidth: "150px",
     sortable: (row) => row.type,
     selector: (row) => row.type,
   },
   {
-    name: "Kaslllik sababi",
+    name: "KASALLIK sababi",
     minWidth: "150px",
     sortable: (row) => row.reason,
     selector: (row) => row.reason,

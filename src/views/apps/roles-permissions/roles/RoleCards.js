@@ -223,7 +223,7 @@ const RoleCards = () => {
                       setShow(true);
                     }}
                   >
-                    Yangi lavozim qoshish
+                    Yangi lavozim Qo'shish
                   </Button>
                   <p className="mb-0">
                     Agar oldin mavjud bolmagan bolsa yangi rol qoshing
@@ -324,7 +324,7 @@ const RoleCards = () => {
                                 className="form-check-label"
                                 for={`create-${role}`}
                               >
-                                Narsa qoshish
+                                Narsa Qo'shish
                               </Label>
                             </div>
                           </div>

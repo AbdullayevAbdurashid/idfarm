@@ -22,7 +22,7 @@ const SidebarAddPayment = ({ open, toggleSidebar }) => {
     <Sidebar
       size="lg"
       open={open}
-      title="Tolov qoshish"
+      title="Tolov Qo'shish"
       headerClassName="mb-1"
       contentClassName="p-0"
       toggleSidebar={toggleSidebar}

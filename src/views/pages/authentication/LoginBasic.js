@@ -112,7 +112,7 @@ const LoginBasic = () => {
               Welcome to IDFARM! 👋
             </CardTitle>
             <CardText className="mb-2">
-              Please sign-in to your account and start the adventure
+              Iltimos, akkauntingizga kiring va ishni boshlang
             </CardText>
             <Form
               className="auth-login-form mt-2"

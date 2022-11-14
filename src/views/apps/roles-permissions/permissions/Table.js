@@ -100,7 +100,7 @@ const CustomHeader = ({
             color="primary"
             onClick={() => setShow(true)}
           >
-            Ruxsat qoshish
+            Ruxsat Qo'shish
           </Button>
         </div>
       </Col>

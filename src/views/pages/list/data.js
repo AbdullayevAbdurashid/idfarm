@@ -13,7 +13,7 @@ import {
 export const columns = [
   {
     name: "ID raqami",
-    minWidth: "150px",
+    minWidth: "100px",
     sortable: (row) => row.id,
     cell: (row) => {
       return <Link to={`/cows/${row.id.replace(/\s/g, "")}`}> {row.id}</Link>;
@@ -21,20 +21,20 @@ export const columns = [
   },
   {
     name: "Jinsi",
-    minWidth: "150px",
+    minWidth: "100px",
     sortable: (row) => row.gender,
     selector: (row) => row.gender,
   },
   {
     name: "Zoti",
-    minWidth: "150px",
+    minWidth: "100px",
     sortable: (row) => row.race,
     selector: (row) => row.race,
   },
   {
-    name: "Tugilgan sanasi",
+    name: "Tug'ilgan sanasi",
     sortable: true,
-    minWidth: "150px",
+    minWidth: "200px",
     selector: (row) => row.date,
   },
   {
@@ -44,20 +44,20 @@ export const columns = [
     selector: (row) => row.age,
   },
   {
-    name: "Tugulgandagi ogirligi",
+    name: "Tug'ilgandagi og'irligi",
     sortable: true,
-    minWidth: "150px",
+    minWidth: "250px",
     selector: (row) => row.weightInitial,
   },
   {
-    name: "Ogirligi",
+    name: "Og'irligi",
     sortable: true,
     minWidth: "150px",
     selector: (row) => row.weight,
   },
 
   {
-    name: "Actions",
+    name: "Amallar",
     allowOverflow: true,
     cell: (row) => {
       return (

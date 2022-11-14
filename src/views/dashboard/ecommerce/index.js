@@ -53,7 +53,7 @@ const EcommerceDashboard = () => {
             </Col>
             <Col lg="6" md="3" xs="6">
               <ProfitLineChart
-                name={"Sigir"}
+                name={"Sigirlar"}
                 number={10}
                 info={colors.warning.main}
               />

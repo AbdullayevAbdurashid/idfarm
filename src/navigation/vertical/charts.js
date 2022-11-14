@@ -14,7 +14,7 @@ export default [
   },
   {
     id: "chat",
-    title: "Chorva royhati",
+    title: "Chorva ro'yhati",
     icon: <List size={20} />,
     navLink: "/pages/royhat",
   },
@@ -25,16 +25,9 @@ export default [
     children: [
       {
         id: "invoiceList",
-        title: "Sotuv royhati",
+        title: "Mijozlar ro'yhati",
         icon: <List />,
         navLink: "/apps/invoice/list",
-      },
-
-      {
-        id: "invoiceAdd",
-        title: "Yangi qoshish",
-        icon: <PlusCircle />,
-        navLink: "/apps/invoice/add",
       },
 
       {
@@ -49,13 +42,6 @@ export default [
     id: "storage",
     title: "Ombor",
     icon: <GiBarn size={20} />,
-    children: [
-      {
-        id: "invoiceList",
-        title: "Qoshish",
-        icon: <PlusCircle />,
-        navLink: "/pages/storage",
-      },
-    ],
+    navLink: "/pages/storage",
   },
 ];

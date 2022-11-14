@@ -69,7 +69,7 @@ function Heard() {
                     className="p-1"
                   />
                   <h3 className="mt-2">
-                    <b>162</b> sigir
+                    <b>162</b> buqa
                   </h3>
                 </CardBody>
               </Card>
@@ -83,7 +83,7 @@ function Heard() {
                     className="p-1"
                   />
                   <h3 className="mt-2">
-                    <b>34</b> novvos
+                    <b>34</b> sigir
                   </h3>
                 </CardBody>
               </Card>
@@ -98,7 +98,7 @@ function Heard() {
                   />
 
                   <h3 className="mt-2">
-                    Oxirgi o'limga <b>375</b> kun boldi
+                    Oxirgi o'lim qayd etilgan sana: <b>12/04/2022</b>
                   </h3>
                 </CardBody>
               </Card>
@@ -114,7 +114,7 @@ function Heard() {
                   />
 
                   <h3 className="mt-2">
-                    Oxirgi emlashga <b>375</b> kun boldi
+                    Oxirgi emlash sanasi :<b>12/04/2022</b>
                   </h3>
                 </CardBody>
               </Card>
@@ -129,7 +129,7 @@ function Heard() {
           desc={"Chorva soni 2022 yilda"}
         />
         <SimpleLineChart
-          title={"Tugulish va olimlar soni"}
+          title={"Tug'ulish va o'limlar soni"}
           isLegend={true}
           data={deathCount}
         />

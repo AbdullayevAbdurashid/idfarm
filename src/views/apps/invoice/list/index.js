@@ -48,7 +48,7 @@ const CustomHeader = ({
             </Input>
           </div>
           <Button tag={Link} to="/apps/invoice/add" color="primary">
-            Yangi savdo qoshish
+            Yangi savdo Qo'shish
           </Button>
         </Col>
         <Col

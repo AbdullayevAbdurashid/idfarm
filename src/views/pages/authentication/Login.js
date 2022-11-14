@@ -214,7 +214,7 @@ const Login = () => {
               Welcome to IDFARM! 👋
             </CardTitle>
             <CardText className="mb-2">
-              Please sign-in to your account and start the adventure
+              Iltimos, akkauntingizga kiring va ishni boshlang
             </CardText>
             <Alert color="primary">
               <div className="alert-body font-small-2">

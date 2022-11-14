@@ -66,11 +66,11 @@ const ApexRadiarChart = () => {
   // ** Chart Series
   const series = [
     {
-      name: "Navvos",
+      name: "Buqa",
       data: [60, 64, 20, 60, 42, 63, 30],
     },
     {
-      name: "Sigir",
+      name: "Sigirlar",
       data: [65, 46, 20, 40, 58, 63, 30],
     },
   ];

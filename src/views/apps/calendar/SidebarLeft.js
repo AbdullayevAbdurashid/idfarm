@@ -56,7 +56,7 @@ const SidebarLeft = (props) => {
               onChange={(e) => dispatch(updateAllFilters(e.target.checked))}
             />
             <Label className="form-check-label" for="view-all">
-              Hammasini korish
+              Hammasini ko'rish
             </Label>
           </div>
           <div className="calendar-events-filter">

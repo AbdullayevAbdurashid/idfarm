@@ -159,7 +159,7 @@ const DataTableWithButtons = ({ cowData, columns, noSearch }) => {
     <Fragment>
       <Card>
         <CardHeader className="flex-md-row flex-column align-md-items-center align-items-start border-bottom">
-          <CardTitle tag="h4">Chorva royhati</CardTitle>
+          <CardTitle tag="h4">Chorva ro'yhati</CardTitle>
           <div className="d-flex mt-md-0 mt-1">
             <UncontrolledButtonDropdown>
               <DropdownToggle color="secondary" caret outline>
@@ -194,7 +194,7 @@ const DataTableWithButtons = ({ cowData, columns, noSearch }) => {
             </UncontrolledButtonDropdown>
             <Button className="ms-2" color="primary" onClick={handleModal}>
               <Plus size={15} />
-              <span className="align-middle ms-50">Qoshish</span>
+              <span className="align-middle ms-50">Qo'shish</span>
             </Button>
           </div>
         </CardHeader>
