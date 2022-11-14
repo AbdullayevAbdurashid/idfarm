@@ -1,101 +1,121 @@
 import { MoreVertical, Edit, FileText, Archive, Trash } from "react-feather";
 import { Link } from "react-router-dom";
 // ** Reactstrap Imports
-import {
-  Badge,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
+export const expensesData = [
+  {
+    name: "Январь",
+    pv: 200,
+    pd: 300,
+  },
+  {
+    name: "Феврал",
+    pv: 100,
+    pd: 300,
+  },
+  {
+    name: "Март",
+    pv: 200,
+    pd: 100,
+  },
+  {
+    name: "Апрель",
+    pv: 50,
+    pd: 100,
+  },
+  {
+    name: "Май",
+    pv: 23,
+    pd: 100,
+  },
+  {
+    name: "Июнь",
+    pv: 13,
+    pd: 100,
+  },
+  {
+    name: "Июль",
+    pv: 57,
+    pd: 100,
+  },
+  {
+    name: "Август",
+    pv: 62,
+    pd: 140,
+  },
+  {
+    name: "Сеньтябрь",
+    pv: 68,
+    pd: 190,
+  },
+  {
+    name: "Октябрь",
+    pv: 30,
+    pd: 50,
+  },
+  {
+    name: "Ноябрь",
+    pv: 34,
+    pd: 50,
+  },
+  {
+    name: "Декабрь",
+    pv: 10,
+    pd: 60,
+  },
+];
 export const columns = [
   {
-    name: "ID raqami",
+    name: "Xarajat turi",
     minWidth: "150px",
-    sortable: (row) => row.id,
-    cell: (row) => {
-      return <Link to={`/cows/${row.id.replace(/\s/g, "")}`}> {row.id}</Link>;
-    },
+    sortable: (row) => row.type,
+    selector: (row) => row.type,
   },
   {
-    name: "Jinsi",
+    name: "Xarajat nomi",
     minWidth: "150px",
-    sortable: (row) => row.gender,
-    selector: (row) => row.gender,
+    sortable: (row) => row.name,
+    selector: (row) => row.name,
   },
   {
-    name: "Zoti",
+    name: "O'lchov birligi",
     minWidth: "150px",
-    sortable: (row) => row.race,
-    selector: (row) => row.race,
+    sortable: (row) => row.measure,
+    selector: (row) => row.measure,
   },
   {
-    name: "Tugilgan sanasi",
+    name: "Miqdori",
     sortable: true,
     minWidth: "150px",
-    selector: (row) => row.date,
-  },
-  {
-    name: "Yoshi",
-    sortable: true,
-    minWidth: "100px",
-    selector: (row) => row.age,
-  },
-  {
-    name: "Tugulgandagi ogirligi",
-    sortable: true,
-    minWidth: "150px",
-    selector: (row) => row.weightInitial,
-  },
-  {
-    name: "Ogirligi",
-    sortable: true,
-    minWidth: "150px",
-    selector: (row) => row.weight,
+    selector: (row) => row.qnt,
   },
 
   {
-    name: "Actions",
-    allowOverflow: true,
-    cell: (row) => {
-      return (
-        <div className="d-flex">
-          <UncontrolledDropdown>
-            <DropdownToggle className="pe-1" tag="span">
-              <MoreVertical size={15} />
-            </DropdownToggle>
-            <DropdownMenu end>
-              <DropdownItem
-                tag="a"
-                href={"/cows/" + row.id.replace(/\s/g, "")}
-                className="w-100"
-              >
-                <FileText size={15} />
-                <span className="align-middle ms-50">Malumot</span>
-              </DropdownItem>
-              <DropdownItem
-                tag="a"
-                href="/"
-                className="w-100"
-                onClick={(e) => e.preventDefault()}
-              >
-                <Archive size={15} />
-                <span className="align-middle ms-50">Archive</span>
-              </DropdownItem>
-              <DropdownItem
-                tag="a"
-                href="/"
-                className="w-100"
-                onClick={(e) => e.preventDefault()}
-              >
-                <Trash size={15} />
-                <span className="align-middle ms-50">Delete</span>
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
-          <Edit size={15} />
-        </div>
-      );
-    },
+    name: "Narxi",
+    sortable: true,
+    minWidth: "150px",
+    selector: (row) => row.price,
+  },
+  {
+    name: "Summasi",
+    sortable: true,
+    minWidth: "150px",
+    selector: (row) => row.summ,
+  },
+  {
+    name: "Sanasi",
+    sortable: true,
+    minWidth: "100px",
+    selector: (row) => row.date,
+  },
+];
+export const data = [
+  {
+    type: "Yem",
+    name: "Bug'doy",
+    measure: "Tonna",
+    qnt: "10",
+    price: "100, 000 mln",
+    summ: "100,00,000 mln",
+    date: "20/11/2022",
   },
 ];
