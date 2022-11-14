@@ -82,11 +82,11 @@ const Print = () => {
         <div className="mt-md-0 mt-2">
           <h4 className="fw-bold text-end mb-1">INVOICE #3492</h4>
           <div className="invoice-date-wrapper mb-50">
-            <span className="invoice-date-title">Date Issued:</span>
+            <span className="invoice-date-title">Chiqarilgan sana:</span>
             <span className="fw-bold"> 25/08/2020</span>
           </div>
           <div className="invoice-date-wrapper">
-            <span className="invoice-date-title">Due Date:</span>
+            <span className="invoice-date-title">Muddati:</span>
             <span className="fw-bold">29/08/2020</span>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Print = () => {
 
       <Row className="pb-2">
         <Col sm="6">
-          <h6 className="mb-1">Invoice To:</h6>
+          <h6 className="mb-1">Hisob-faktura:</h6>
           <p className="mb-25">Thomas shelby</p>
           <p className="mb-25">Shelby Company Limited</p>
           <p className="mb-25">Small Heath, B10 0HF, UK</p>
@@ -104,11 +104,11 @@ const Print = () => {
           <p className="mb-0">peakyFBlinders@gmail.com</p>
         </Col>
         <Col className="mt-sm-0 mt-2" sm="6">
-          <h6 className="mb-1">Payment Details:</h6>
+          <h6 className="mb-1">Toʻlov tafsilotlari:</h6>
           <table>
             <tbody>
               <tr>
-                <td className="pe-1">Total Due:</td>
+                <td className="pe-1">Jami toʻlov:</td>
                 <td>
                   <strong>$12,110.55</strong>
                 </td>
@@ -122,11 +122,11 @@ const Print = () => {
                 <td>United States</td>
               </tr>
               <tr>
-                <td className="pe-1">IBAN:</td>
+                <td className="pe-1">STIR:</td>
                 <td>ETD95476213874685</td>
               </tr>
               <tr>
-                <td className="pe-1">SWIFT code:</td>
+                <td className="pe-1">SWIFT kodi:</td>
                 <td>BR91905</td>
               </tr>
             </tbody>
@@ -185,8 +185,8 @@ const Print = () => {
       <Row className="invoice-sales-total-wrapper mt-3">
         <Col className="mt-md-0 mt-3" md="6" order={{ md: 1, lg: 2 }}>
           <p className="mb-0">
-            <span className="fw-bold">Salesperson:</span>{" "}
-            <span className="ms-75">Alfie Solomons</span>
+            <span className="fw-bold">Sotuvchi:</span>{" "}
+            <span className="ms-75">Abduvali</span>
           </p>
         </Col>
         <Col

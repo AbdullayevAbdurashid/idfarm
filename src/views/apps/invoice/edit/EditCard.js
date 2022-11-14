@@ -144,7 +144,7 @@ const InvoiceEditCard = ({ data }) => {
               />
             </div>
             <div className="d-flex align-items-center">
-              <span className="title">Due Date:</span>
+              <span className="title">Muddati:</span>
               <Flatpickr
                 value={dueDatepicker}
                 onChange={(date) => setDueDatePicker(date)}
@@ -162,7 +162,7 @@ const InvoiceEditCard = ({ data }) => {
       <CardBody className="invoice-padding pt-0">
         <Row className="invoice-spacing">
           <Col className="p-0" xl="8">
-            <h6 className="mb-2">Invoice To:</h6>
+            <h6 className="mb-2">Hisob-faktura:</h6>
             <h6 className="mb-25">{data.invoice.client.name}</h6>
             <CardText className="mb-25">{data.invoice.client.company}</CardText>
             <CardText className="mb-25">{data.invoice.client.address}</CardText>
@@ -172,11 +172,11 @@ const InvoiceEditCard = ({ data }) => {
             </CardText>
           </Col>
           <Col className="p-0 mt-xl-0 mt-2" xl="4">
-            <h6 className="mb-2">Payment Details:</h6>
+            <h6 className="mb-2">Toʻlov tafsilotlari:</h6>
             <table>
               <tbody>
                 <tr>
-                  <td className="pe-1">Total Due:</td>
+                  <td className="pe-1">Jami toʻlov:</td>
                   <td>
                     <span className="fw-bolder">
                       {data.paymentDetails.totalDue}
@@ -192,11 +192,11 @@ const InvoiceEditCard = ({ data }) => {
                   <td>{data.paymentDetails.country}</td>
                 </tr>
                 <tr>
-                  <td className="pe-1">IBAN:</td>
+                  <td className="pe-1">STIR:</td>
                   <td>{data.paymentDetails.iban}</td>
                 </tr>
                 <tr>
-                  <td className="pe-1">SWIFT code:</td>
+                  <td className="pe-1">SWIFT kodi:</td>
                   <td>{data.paymentDetails.swiftCode}</td>
                 </tr>
               </tbody>
@@ -302,13 +302,13 @@ const InvoiceEditCard = ({ data }) => {
           >
             <div className="d-flex align-items-center mb-1">
               <Label for="salesperson" className="form-label">
-                Salesperson:
+                Sotuvchi:
               </Label>
               <Input
                 type="text"
                 className="ms-50"
                 id="salesperson"
-                placeholder="Edward Crowley"
+                placeholder="Abduvali"
               />
             </div>
           </Col>

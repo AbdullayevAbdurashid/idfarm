@@ -28,9 +28,6 @@ import {
 const AccountTabs = ({ data }) => {
   // ** States
   const handleSubmit = () => {};
-  const onSubmit = (data) => {
-    console.log(data);
-  };
 
   return (
     <Fragment>
@@ -39,7 +36,7 @@ const AccountTabs = ({ data }) => {
           <CardTitle tag="h4">Profile Details</CardTitle>
         </CardHeader>
         <CardBody className="py-2 my-25">
-          <Form className=" pt-50" onSubmit={handleSubmit(onSubmit)}>
+          <Form className=" pt-50" onSubmit={handleSubmit()}>
             <Row>
               <Col sm="6" className="mb-1">
                 <Label className="form-label" for="ID">

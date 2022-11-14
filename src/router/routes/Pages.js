@@ -13,6 +13,7 @@ const BlogDetails = lazy(() => import("../../views/pages/blog/details"));
 const ComingSoon = lazy(() => import("../../views/pages/misc/ComingSoon"));
 const ModalExamples = lazy(() => import("../../views/pages/modal-examples"));
 const Maintenance = lazy(() => import("../../views/pages/misc/Maintenance"));
+const Expenses = lazy(() => import("../../views/pages/Expenses/index"));
 const AccountSettings = lazy(() =>
   import("../../views/pages/account-settings")
 );
@@ -44,6 +45,10 @@ const PagesRoutes = [
   {
     path: "/pages/royhat",
     element: <List />,
+  },
+  {
+    path: "/pages/expenses",
+    element: <Expenses />,
   },
   {
     path: "/pages/main",

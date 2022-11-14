@@ -70,12 +70,8 @@ const PreviewCard = ({ data }) => {
               </svg>
               <h3 className="text-primary invoice-logo">IDFARM</h3>
             </div>
-            <CardText className="mb-25">
-            Fargona shaxar, Quva tumani,
-            </CardText>
-            <CardText className="mb-25">
-            FA 150100, Uzbekiston
-            </CardText>
+            <CardText className="mb-25">Fargona shaxar, Quva tumani,</CardText>
+            <CardText className="mb-25">FA 150100, Uzbekiston</CardText>
             <CardText className="mb-0">
               +1 (123) 456 7891, +44 (876) 543 2198
             </CardText>
@@ -85,11 +81,11 @@ const PreviewCard = ({ data }) => {
               Invoice <span className="invoice-number">#{data.invoice.id}</span>
             </h4>
             <div className="invoice-date-wrapper">
-              <p className="invoice-date-title">Date Issued:</p>
+              <p className="invoice-date-title">Chiqarilgan sana:</p>
               <p className="invoice-date">{data.invoice.issuedDate}</p>
             </div>
             <div className="invoice-date-wrapper">
-              <p className="invoice-date-title">Due Date:</p>
+              <p className="invoice-date-title">Muddati:</p>
               <p className="invoice-date">{data.invoice.dueDate}</p>
             </div>
           </div>
@@ -103,7 +99,7 @@ const PreviewCard = ({ data }) => {
       <CardBody className="invoice-padding pt-0">
         <Row className="invoice-spacing">
           <Col className="p-0" xl="8">
-            <h6 className="mb-2">Invoice To:</h6>
+            <h6 className="mb-2">Hisob-faktura:</h6>
             <h6 className="mb-25">{data.invoice.client.name}</h6>
             <CardText className="mb-25">{data.invoice.client.company}</CardText>
             <CardText className="mb-25">{data.invoice.client.address}</CardText>
@@ -113,11 +109,11 @@ const PreviewCard = ({ data }) => {
             </CardText>
           </Col>
           <Col className="p-0 mt-xl-0 mt-2" xl="4">
-            <h6 className="mb-2">Payment Details:</h6>
+            <h6 className="mb-2">Toʻlov tafsilotlari:</h6>
             <table>
               <tbody>
                 <tr>
-                  <td className="pe-1">Total Due:</td>
+                  <td className="pe-1">TJami toʻlov:</td>
                   <td>
                     <span className="fw-bold">
                       {data.paymentDetails.totalDue}
@@ -133,11 +129,11 @@ const PreviewCard = ({ data }) => {
                   <td>{data.paymentDetails.country}</td>
                 </tr>
                 <tr>
-                  <td className="pe-1">IBAN:</td>
+                  <td className="pe-1">STIR:</td>
                   <td>{data.paymentDetails.iban}</td>
                 </tr>
                 <tr>
-                  <td className="pe-1">SWIFT code:</td>
+                  <td className="pe-1">SWIFT kodi:</td>
                   <td>{data.paymentDetails.swiftCode}</td>
                 </tr>
               </tbody>
@@ -148,61 +144,13 @@ const PreviewCard = ({ data }) => {
       {/* /Address and Contact */}
 
       {/* Invoice Description */}
-      <Table responsive>
-        <thead>
-          <tr>
-            <th className="py-1">Task description</th>
-            <th className="py-1">Rate</th>
-            <th className="py-1">Hours</th>
-            <th className="py-1">Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="py-1">
-              <p className="card-text fw-bold mb-25">Native App Development</p>
-              <p className="card-text text-nowrap">
-                Developed a full stack native app using React Native, Bootstrap
-                & Python
-              </p>
-            </td>
-            <td className="py-1">
-              <span className="fw-bold">$60.00</span>
-            </td>
-            <td className="py-1">
-              <span className="fw-bold">30</span>
-            </td>
-            <td className="py-1">
-              <span className="fw-bold">$1,800.00</span>
-            </td>
-          </tr>
-          <tr className="border-bottom">
-            <td className="py-1">
-              <p className="card-text fw-bold mb-25">Ui Kit Design</p>
-              <p className="card-text text-nowrap">
-                Designed a UI kit for native app using Sketch, Figma & Adobe XD
-              </p>
-            </td>
-            <td className="py-1">
-              <span className="fw-bold">$60.00</span>
-            </td>
-            <td className="py-1">
-              <span className="fw-bold">20</span>
-            </td>
-            <td className="py-1">
-              <span className="fw-bold">$1200.00</span>
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-      {/* /Invoice Description */}
 
       {/* Total & Sales Person */}
       <CardBody className="invoice-padding pb-0">
         <Row className="invoice-sales-total-wrapper">
           <Col className="mt-md-0 mt-3" md="6" order={{ md: 1, lg: 2 }}>
             <CardText className="mb-0">
-              <span className="fw-bold">Salesperson:</span>{" "}
+              <span className="fw-bold">Sotuvchi:</span>{" "}
               <span className="ms-75">Alfie Solomons</span>
             </CardText>
           </Col>

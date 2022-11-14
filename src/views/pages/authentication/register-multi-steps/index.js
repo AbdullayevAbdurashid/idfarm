@@ -44,7 +44,7 @@ const RegisterMultiSteps = () => {
     {
       title: "Billing",
       id: "step-billing",
-      subtitle: "Payment Details",
+      subtitle: "Toʻlov tafsilotlari",
       icon: <CreditCard size={18} />,
       content: <Billing stepper={stepper} />,
     },

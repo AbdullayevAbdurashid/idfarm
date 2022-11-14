@@ -44,8 +44,8 @@ const AddCard = () => {
   const [picker, setPicker] = useState(new Date());
   const [invoiceNumber, setInvoiceNumber] = useState(false);
   const [dueDatepicker, setDueDatePicker] = useState(new Date());
-  const [price, setPrice] = useState(24000)
-  const [qnt, setQnt] = useState(1)
+  const [price, setPrice] = useState(24000);
+  const [qnt, setQnt] = useState(1);
 
   const [options, setOptions] = useState([
     {
@@ -211,10 +211,10 @@ const AddCard = () => {
                 </svg>
                 <h3 className="text-primary invoice-logo">IDFARM</h3>
               </div>
+              <p className="card-text mb-25">Fargona 84,</p>
               <p className="card-text mb-25">
-               Fargona 84, 
+                Fargona shaxar, Quva tumani, FA 150100, Uzbekiston
               </p>
-              <p className="card-text mb-25">Fargona shaxar, Quva tumani, FA 150100, Uzbekiston</p>
               <p className="card-text mb-0">
                 +998 (90)123 22 33, +998 (90)234 22 33
               </p>
@@ -304,7 +304,7 @@ const AddCard = () => {
                   </tr>
                   <tr>
                     <td className="pe-1">Bank ismi:</td>
-                    <td>Ipoteka  Banki</td>
+                    <td>Ipoteka Banki</td>
                   </tr>
                   <tr>
                     <td className="pe-1">Viloyat:</td>
@@ -315,7 +315,7 @@ const AddCard = () => {
                     <td>ETD95476213874685</td>
                   </tr>
                   <tr>
-                    <td className="pe-1">Schet raqami :</td>
+                    <td className="pe-1">Hisob raqami :</td>
                     <td>BR91905</td>
                   </tr>
                 </tbody>
@@ -343,15 +343,12 @@ const AddCard = () => {
                           lg="5"
                           sm="12"
                         >
-                          <CardText className="col-title mb-md-50 mb-0">
-                            
-                          </CardText>
+                          <CardText className="col-title mb-md-50 mb-0"></CardText>
                           <Input type="select" className="item-details">
                             <option>Sut</option>
                             <option>Gusht</option>
                             <option>Chorva</option>
                           </Input>
-                       
                         </Col>
                         <Col className="my-lg-0 my-2" lg="3" sm="12">
                           <CardText className="col-title mb-md-2 mb-0">
@@ -360,7 +357,7 @@ const AddCard = () => {
                           <Input
                             type="number"
                             defaultValue="24 000"
-                            onChange={(e)=>setPrice(e.target.value)}
+                            onChange={(e) => setPrice(e.target.value)}
                             placeholder="24"
                           />
                           <div className="mt-2">
@@ -374,7 +371,7 @@ const AddCard = () => {
                           <Input
                             type="number"
                             defaultValue="1"
-                            onChange={(e)=>setQnt(e.target.value)}
+                            onChange={(e) => setQnt(e.target.value)}
                             placeholder="1"
                           />
                         </Col>
@@ -382,7 +379,7 @@ const AddCard = () => {
                           <CardText className="col-title mb-md-50 mb-0">
                             Narxi
                           </CardText>
-                          <CardText className="mb-0"> {price*qnt}</CardText>
+                          <CardText className="mb-0"> {price * qnt}</CardText>
                         </Col>
                       </Row>
                       <div className="d-flex justify-content-center border-start invoice-product-actions py-50 px-25">
@@ -412,7 +409,6 @@ const AddCard = () => {
             </Col>
           </Row>
         </CardBody>
-
 
         {/* Invoice Total */}
         <CardBody className="invoice-padding">
@@ -484,7 +480,7 @@ const AddCard = () => {
       <Sidebar
         size="lg"
         open={open}
-        title="Add Payment"
+        title="Tolov qoshish"
         headerClassName="mb-1"
         contentClassName="p-0"
         toggleSidebar={toggleSidebar}
@@ -492,13 +488,13 @@ const AddCard = () => {
         <Form>
           <div className="mb-2">
             <Label for="customer-name" className="form-label">
-               Mijoz ismi
+              Mijoz ismi
             </Label>
             <Input id="customer-name" placeholder="John Doe" />
           </div>
           <div className="mb-2">
             <Label for="customer-email" className="form-label">
-               Email
+              Email
             </Label>
             <Input
               type="email"

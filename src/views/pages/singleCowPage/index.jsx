@@ -4,6 +4,7 @@ import Tabs from "./Tabs";
 import { Container, TabContent, TabPane } from "reactstrap";
 import Breadcrumbs from "@components/breadcrumbs";
 import AccountTabs from "./infoTabContent";
+import VaccineInfo from "./vaccine";
 function List() {
   let { id } = useParams();
   const [activeTab, setActiveTab] = useState("1");
@@ -39,6 +40,12 @@ function List() {
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <AccountTabs data={data[0]}></AccountTabs>
+        </TabPane>
+        <TabPane tabId="2">
+          <VaccineInfo />
+        </TabPane>
+        <TabPane tabId="3">
+          <VaccineInfo isIllness />
         </TabPane>
       </TabContent>
     </Container>

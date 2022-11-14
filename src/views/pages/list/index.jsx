@@ -2,12 +2,12 @@ import React, { useMemo, useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import DataTableWithButtons from "@src/views/tables/data-tables/basic/TableWithButtons.js";
 import "@styles/react/libs/tables/react-dataTable-component.scss";
-import { cowData } from "../../tables/data-tables/data";
-function List() {
+import { columns, data } from "./data";
+function Expenses() {
   return (
     <Container fluid>
-      <DataTableWithButtons cowData={cowData} />
+      <DataTableWithButtons columns={columns} cowData={data} />
     </Container>
   );
 }
-export default List;
+export default Expenses;

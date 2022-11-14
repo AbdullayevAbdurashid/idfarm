@@ -2,7 +2,7 @@
 import { Fragment, useState, forwardRef } from "react";
 
 // ** Table Data & Columns
-import { data, columns } from "../data";
+import { data } from "../data";
 
 // ** Add New Modal Component
 import AddNewModal from "./AddNewModal";
@@ -44,7 +44,7 @@ const BootstrapCheckbox = forwardRef((props, ref) => (
   </div>
 ));
 
-const DataTableWithButtons = ({ cowData }) => {
+const DataTableWithButtons = ({ cowData, columns, noSearch }) => {
   // ** States
   const [modal, setModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
@@ -59,14 +59,6 @@ const DataTableWithButtons = ({ cowData }) => {
     const value = e.target.value;
     let updatedData = [];
     setSearchValue(value);
-
-    const status = {
-      1: { title: "Current", color: "light-primary" },
-      2: { title: "Professional", color: "light-success" },
-      3: { title: "Rejected", color: "light-danger" },
-      4: { title: "Resigned", color: "light-warning" },
-      5: { title: "Applied", color: "light-info" },
-    };
 
     if (value.length) {
       updatedData = cowData.filter((item) => {
@@ -181,7 +173,7 @@ const DataTableWithButtons = ({ cowData }) => {
                 </DropdownItem>
                 <DropdownItem
                   className="w-100"
-                  onClick={() => downloadCSV(data)}
+                  onClick={() => downloadCSV(cowData)}
                 >
                   <FileText size={15} />
                   <span className="align-middle ms-50">CSV</span>
@@ -206,25 +198,27 @@ const DataTableWithButtons = ({ cowData }) => {
             </Button>
           </div>
         </CardHeader>
-        <Row className="justify-content-end mx-0">
-          <Col
-            className="d-flex align-items-center justify-content-end mt-1"
-            md="6"
-            sm="12"
-          >
-            <Label className="me-1" for="search-input">
-              ID ni kiriting
-            </Label>
-            <Input
-              className="dataTable-filter mb-50"
-              type="text"
-              bsSize="sm"
-              id="search-input"
-              value={searchValue}
-              onChange={handleFilter}
-            />
-          </Col>
-        </Row>
+        {!noSearch ? (
+          <Row className="justify-content-end mx-0">
+            <Col
+              className="d-flex align-items-center justify-content-end mt-1"
+              md="6"
+              sm="12"
+            >
+              <Label className="me-1" for="search-input">
+                ID ni kiriting
+              </Label>
+              <Input
+                className="dataTable-filter mb-50"
+                type="text"
+                bsSize="sm"
+                id="search-input"
+                value={searchValue}
+                onChange={handleFilter}
+              />
+            </Col>
+          </Row>
+        ) : null}
         <div className="react-dataTable react-dataTable-selectable-rows">
           <DataTable
             noHeader
